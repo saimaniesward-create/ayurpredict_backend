@@ -1,0 +1,193 @@
+[2026-01-06 07:16:33.136169] --- Script Started ---
+[2026-01-06 07:16:33.474813] MySQL Connector imported successfully.
+[2026-01-06 07:16:35.561328] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 07:16:35.562506] Processing for User ID: 1
+[2026-01-06 07:16:35.725314] Database connected successfully.
+[2026-01-06 07:16:35.728952] No scores found for user.
+[2026-01-06 07:18:42.384207] --- Script Started ---
+[2026-01-06 07:18:42.781274] MySQL Connector imported successfully.
+[2026-01-06 07:18:44.593148] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 07:18:44.594761] Processing for User ID: 1
+[2026-01-06 07:18:44.755691] Database connected successfully.
+[2026-01-06 07:18:44.758506] No scores found for user.
+[2026-01-06 07:22:51.236253] --- Script Started ---
+[2026-01-06 07:22:51.669952] MySQL Connector imported successfully.
+[2026-01-06 07:22:53.749930] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 07:22:53.752010] Processing for User ID: 1
+[2026-01-06 07:22:53.910059] Database connected successfully.
+[2026-01-06 07:22:53.920810] No scores found for user.
+[2026-01-06 07:29:53.873469] --- Script Started ---
+[2026-01-06 07:29:54.332769] MySQL Connector imported successfully.
+[2026-01-06 07:29:56.228869] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 07:29:56.230542] Processing for User ID: 1
+[2026-01-06 07:29:56.391346] Database connected successfully.
+[2026-01-06 07:29:56.394483] No scores found for user.
+[2026-01-06 07:30:00.064137] --- Script Started ---
+[2026-01-06 07:30:00.463651] MySQL Connector imported successfully.
+[2026-01-06 07:30:02.414889] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 07:30:02.416402] Processing for User ID: 1
+[2026-01-06 07:30:02.556199] Database connected successfully.
+[2026-01-06 07:30:02.558636] No scores found for user.
+[2026-01-06 07:30:03.647527] --- Script Started ---
+[2026-01-06 07:30:04.038904] MySQL Connector imported successfully.
+[2026-01-06 07:30:06.198308] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 07:30:06.199989] Processing for User ID: 1
+[2026-01-06 07:30:06.350964] Database connected successfully.
+[2026-01-06 07:30:06.353515] No scores found for user.
+[2026-01-06 08:05:20.120679] --- Script Started ---
+[2026-01-06 08:05:20.521743] MySQL Connector imported successfully.
+[2026-01-06 08:05:22.680805] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 08:05:22.682276] Processing for User ID: 1
+[2026-01-06 08:05:22.874473] Database connected successfully.
+[2026-01-06 08:05:22.877319] No scores found for user.
+[2026-01-06 08:07:23.637969] --- Script Started ---
+[2026-01-06 08:07:23.805684] MySQL Connector imported successfully.
+[2026-01-06 08:07:24.471305] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 08:07:24.471703] Processing for User ID: 1
+[2026-01-06 08:07:24.547447] Database connected successfully.
+[2026-01-06 08:07:24.548812] No scores found for user.
+[2026-01-06 08:07:33.300689] --- Script Started ---
+[2026-01-06 08:07:33.458044] MySQL Connector imported successfully.
+[2026-01-06 08:07:34.083275] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 08:07:34.083645] Processing for User ID: 1
+[2026-01-06 08:07:34.148740] Database connected successfully.
+[2026-01-06 08:07:34.149956] No scores found for user.
+[2026-01-06 08:08:05.887957] --- Script Started ---
+[2026-01-06 08:08:06.060341] MySQL Connector imported successfully.
+[2026-01-06 08:08:06.659697] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 08:08:06.660129] Processing for User ID: 1
+[2026-01-06 08:08:06.711926] Database connected successfully.
+[2026-01-06 08:08:06.713029] No scores found for user.
+[2026-01-06 08:16:16.918073] --- Script Started ---
+[2026-01-06 08:16:17.046924] MySQL Connector imported successfully.
+[2026-01-06 08:16:17.749588] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 08:16:17.750652] Processing for User ID: 1
+[2026-01-06 08:16:17.807987] Database connected successfully.
+[2026-01-06 08:16:17.809401] Scores Found: Vata=80, Pitta=50, Kapha=20
+[2026-01-06 08:16:19.119137] AI Prediction: Vata
+[2026-01-06 08:16:19.119983] Logic Check: DomScore=80, DepletedScore=20
+[2026-01-06 08:16:19.120424] Condition: High Imbalance (>60)
+[2026-01-06 08:16:19.120751] Condition: Adding Depleted Support (<=30)
+[2026-01-06 08:16:19.121961] Fetched 8 food items for Vata
+[2026-01-06 08:16:19.122831] Fetched 8 yoga items for Vata
+[2026-01-06 08:16:19.123573] Fetched 8 lifestyle items for Vata
+[2026-01-06 08:16:19.124357] Fetched 8 herbs for Vata
+[2026-01-06 08:16:19.125190] Fetched 4 food items for Kapha
+[2026-01-06 08:16:19.126203] Fetched 4 yoga items for Kapha
+[2026-01-06 08:16:19.127192] Fetched 4 lifestyle items for Kapha
+[2026-01-06 08:16:19.128714] Fetched 4 herbs for Kapha
+[2026-01-06 08:16:19.129378] Success. Returning JSON (Legacy Format).
+[2026-01-06 08:19:28.540589] --- Script Started ---
+[2026-01-06 08:19:28.676205] MySQL Connector imported successfully.
+[2026-01-06 08:19:29.294747] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 08:19:29.295345] Processing for User ID: 1
+[2026-01-06 08:19:29.365388] Database connected successfully.
+[2026-01-06 08:19:29.366291] Scores Found: Vata=80, Pitta=50, Kapha=20
+[2026-01-06 08:19:30.549859] AI Prediction: Vata
+[2026-01-06 08:19:30.550320] Logic Check: DomScore=80, DepletedScore=20
+[2026-01-06 08:19:30.550625] Condition: High Imbalance (>60)
+[2026-01-06 08:19:30.550892] Condition: Adding Depleted Support (<=30)
+[2026-01-06 08:19:30.552082] Fetched 8 food items for Vata
+[2026-01-06 08:19:30.553291] Fetched 8 yoga items for Vata
+[2026-01-06 08:19:30.554137] Fetched 8 lifestyle items for Vata
+[2026-01-06 08:19:30.555597] Fetched 8 herbs for Vata
+[2026-01-06 08:19:30.556636] Fetched 4 food items for Kapha
+[2026-01-06 08:19:30.557714] Fetched 4 yoga items for Kapha
+[2026-01-06 08:19:30.558699] Fetched 4 lifestyle items for Kapha
+[2026-01-06 08:19:30.559583] Fetched 4 herbs for Kapha
+[2026-01-06 08:19:30.559884] Success. Returning JSON (Legacy Format).
+[2026-01-06 08:21:26.638977] --- Script Started ---
+[2026-01-06 08:21:26.786166] MySQL Connector imported successfully.
+[2026-01-06 08:21:27.480560] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 08:21:27.480990] Processing for User ID: 1
+[2026-01-06 08:21:27.548047] Database connected successfully.
+[2026-01-06 08:21:27.550494] Scores Found: Vata=80, Pitta=50, Kapha=20
+[2026-01-06 08:21:28.839316] AI Prediction: Vata
+[2026-01-06 08:21:28.839722] Logic Check: DomScore=80, DepletedScore=20
+[2026-01-06 08:21:28.840318] Condition: High Imbalance (>60)
+[2026-01-06 08:21:28.841007] Condition: Adding Depleted Support (<=30)
+[2026-01-06 08:21:28.850286] Fetched 8 food items for Vata
+[2026-01-06 08:21:28.851413] Fetched 8 yoga items for Vata
+[2026-01-06 08:21:28.852815] Fetched 8 lifestyle items for Vata
+[2026-01-06 08:21:28.854753] Fetched 8 herbs for Vata
+[2026-01-06 08:21:28.856187] Fetched 4 food items for Kapha
+[2026-01-06 08:21:28.857724] Fetched 4 yoga items for Kapha
+[2026-01-06 08:21:28.859239] Fetched 4 lifestyle items for Kapha
+[2026-01-06 08:21:28.861267] Fetched 4 herbs for Kapha
+[2026-01-06 08:21:28.862352] Success. Returning JSON (Legacy Format).
+[2026-01-06 08:21:32.135392] --- Script Started ---
+[2026-01-06 08:21:32.301352] MySQL Connector imported successfully.
+[2026-01-06 08:21:32.992230] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 08:21:32.992597] Processing for User ID: 1
+[2026-01-06 08:21:33.064831] Database connected successfully.
+[2026-01-06 08:21:33.065768] Scores Found: Vata=80, Pitta=50, Kapha=20
+[2026-01-06 08:21:34.291083] AI Prediction: Vata
+[2026-01-06 08:21:34.291535] Logic Check: DomScore=80, DepletedScore=20
+[2026-01-06 08:21:34.291859] Condition: High Imbalance (>60)
+[2026-01-06 08:21:34.292985] Condition: Adding Depleted Support (<=30)
+[2026-01-06 08:21:34.295334] Fetched 8 food items for Vata
+[2026-01-06 08:21:34.297280] Fetched 8 yoga items for Vata
+[2026-01-06 08:21:34.298798] Fetched 8 lifestyle items for Vata
+[2026-01-06 08:21:34.300182] Fetched 8 herbs for Vata
+[2026-01-06 08:21:34.301581] Fetched 4 food items for Kapha
+[2026-01-06 08:21:34.302947] Fetched 4 yoga items for Kapha
+[2026-01-06 08:21:34.304305] Fetched 4 lifestyle items for Kapha
+[2026-01-06 08:21:34.305622] Fetched 4 herbs for Kapha
+[2026-01-06 08:21:34.306360] Success. Returning JSON (Legacy Format).
+[2026-01-06 08:21:37.293249] --- Script Started ---
+[2026-01-06 08:21:37.418375] MySQL Connector imported successfully.
+[2026-01-06 08:21:38.078465] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 08:21:38.078956] Processing for User ID: 1
+[2026-01-06 08:21:38.141389] Database connected successfully.
+[2026-01-06 08:21:38.142344] Scores Found: Vata=80, Pitta=50, Kapha=20
+[2026-01-06 08:21:39.298582] AI Prediction: Vata
+[2026-01-06 08:21:39.299233] Logic Check: DomScore=80, DepletedScore=20
+[2026-01-06 08:21:39.299634] Condition: High Imbalance (>60)
+[2026-01-06 08:21:39.300076] Condition: Adding Depleted Support (<=30)
+[2026-01-06 08:21:39.302109] Fetched 8 food items for Vata
+[2026-01-06 08:21:39.303404] Fetched 8 yoga items for Vata
+[2026-01-06 08:21:39.304191] Fetched 8 lifestyle items for Vata
+[2026-01-06 08:21:39.304962] Fetched 8 herbs for Vata
+[2026-01-06 08:21:39.305832] Fetched 4 food items for Kapha
+[2026-01-06 08:21:39.306528] Fetched 4 yoga items for Kapha
+[2026-01-06 08:21:39.307417] Fetched 4 lifestyle items for Kapha
+[2026-01-06 08:21:39.308188] Fetched 4 herbs for Kapha
+[2026-01-06 08:21:39.308719] Success. Returning JSON (Legacy Format).
+[2026-01-06 08:23:09.071827] --- Script Started ---
+[2026-01-06 08:23:09.193233] MySQL Connector imported successfully.
+[2026-01-06 08:23:09.824274] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 08:23:09.825093] Processing for User ID: 1
+[2026-01-06 08:23:09.889553] Database connected successfully.
+[2026-01-06 08:23:09.891157] Scores Found: Vata=80, Pitta=50, Kapha=20
+[2026-01-06 08:23:11.066364] AI Prediction: Vata
+[2026-01-06 08:23:11.066835] Logic Check: DomScore=80, DepletedScore=20
+[2026-01-06 08:23:11.067515] Condition: High Imbalance (>60)
+[2026-01-06 08:23:11.068109] Condition: Adding Depleted Support (<=30)
+[2026-01-06 08:23:11.068964] Fetched 8 food items for Vata
+[2026-01-06 08:23:11.070197] Fetched 8 yoga items for Vata
+[2026-01-06 08:23:11.071369] Fetched 8 lifestyle items for Vata
+[2026-01-06 08:23:11.072648] Fetched 8 herbs for Vata
+[2026-01-06 08:23:11.074067] Fetched 4 food items for Kapha
+[2026-01-06 08:23:11.074994] Fetched 4 yoga items for Kapha
+[2026-01-06 08:23:11.075716] Fetched 4 lifestyle items for Kapha
+[2026-01-06 08:23:11.077051] Fetched 4 herbs for Kapha
+[2026-01-06 08:23:11.077725] Success. Returning JSON (Legacy Format).
+[2026-01-06 08:23:37.967380] --- Script Started ---
+[2026-01-06 08:23:38.092904] MySQL Connector imported successfully.
+[2026-01-06 08:23:38.767663] ML libraries (joblib, pandas) imported successfully.
+[2026-01-06 08:23:38.768169] Processing for User ID: 1
+[2026-01-06 08:23:38.850499] Database connected successfully.
+[2026-01-06 08:23:38.852059] Scores Found: Vata=80, Pitta=50, Kapha=20
+[2026-01-06 08:23:39.931114] AI Prediction: Vata
+[2026-01-06 08:23:39.931531] Logic Check: DomScore=80, DepletedScore=20
+[2026-01-06 08:23:39.931771] Condition: High Imbalance (>60)
+[2026-01-06 08:23:39.932256] Condition: Adding Depleted Support (<=30)
+[2026-01-06 08:23:39.933943] Fetched 8 food items for Vata
+[2026-01-06 08:23:39.934716] Fetched 8 yoga items for Vata
+[2026-01-06 08:23:39.935330] Fetched 8 lifestyle items for Vata
+[2026-01-06 08:23:39.936253] Fetched 8 herbs for Vata
+[2026-01-06 08:23:39.937068] Fetched 4 food items for Kapha
+[2026-01-06 08:23:39.937929] Fetched 4 yoga items for Kapha
+[2026-01-06 08:23:39.938415] Fetched 4 lifestyle items for Kapha
+[2026-01-06 08:23:39.939982] Fetched 4 herbs for Kapha
+[2026-01-06 08:23:39.940875] Success. Returning JSON (Legacy Format).
