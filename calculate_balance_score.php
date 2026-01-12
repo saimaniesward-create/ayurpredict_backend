@@ -15,14 +15,21 @@ if (!$user_id) {
     exit;
 }
 
-// 1. Calculate Score (User's Formula)
-// Formula: 100 - (|V-50| + |P-50| + |K-50|)
-$imbalance = abs($vata - 50) + abs($pitta - 50) + abs($kapha - 50);
-$score = 100 - $imbalance;
+// 1. Calculate Score
+// Fix: Handle 0 input (No Checkin) and use Subtractive Formula
+$total_imbalance = $vata + $pitta + $kapha;
 
-// Clamp 0-100
-if ($score < 0) $score = 0;
-if ($score > 100) $score = 100;
+if ($total_imbalance == 0) {
+    $score = 0; // No valid check-in data found
+} else {
+    // Formula: Default 100 - (Total Imbalance / 3)
+    // Higher VPK score means more symptoms => Lower Balance Score
+    $score = 100 - ($total_imbalance / 3);
+    
+    // Clamp between 10 (min) and 100 (max)
+    if ($score < 10) $score = 10;
+    if ($score > 100) $score = 100;
+}
 
 // 2. Save to Separate Table
 $stmt = $conn->prepare("INSERT INTO body_balance_scores (user_id, checkin_date, score) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE score=VALUES(score)");

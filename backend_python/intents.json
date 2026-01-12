@@ -1,0 +1,1361 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hey there",
+                "Good morning",
+                "Namaste",
+                "Is anyone there?"
+            ],
+            "responses": [
+                "Namaste! I am Dr. Ayur. How can I guide you on your wellness journey today?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "I am leaving",
+                "Exit chat",
+                "Talk to you soon"
+            ],
+            "responses": [
+                "May you stay balanced and healthy! Goodbye."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you so much",
+                "That helps a lot",
+                "I appreciate it",
+                "Thanks for the advice",
+                "Awesome help"
+            ],
+            "responses": [
+                "You are most welcome! Health is wealth."
+            ]
+        },
+        {
+            "tag": "what_is_ayurveda",
+            "patterns": [
+                "What is Ayurveda?",
+                "Tell me about Ayurveda",
+                "Definition of Ayurveda",
+                "How does Ayurveda work?",
+                "Explain Ayurveda basics",
+                "Is Ayurveda a science?"
+            ],
+            "responses": [
+                "Ayurveda is a 5,000-year-old natural system of medicine from India. It focuses on balancing the body, mind, and spirit through diet, lifestyle, and herbal remedies."
+            ]
+        },
+        {
+            "tag": "vata_info",
+            "patterns": [
+                "What is Vata dosha?",
+                "Explain Vata characteristics",
+                "Tell me about Vata",
+                "Am I Vata type?",
+                "Vata dosha meaning",
+                "What are Vata symptoms?",
+                "What is Vata",
+                "Vata",
+                "Define Vata"
+            ],
+            "responses": [
+                "Vata represents the energy of movement, composed of Air and Ether. People with Vata dominance are creative and energetic but can easily get anxious or have dry skin when imbalanced."
+            ]
+        },
+        {
+            "tag": "pitta_info",
+            "patterns": [
+                "What is Pitta dosha?",
+                "Explain Pitta characteristics",
+                "Tell me about Pitta",
+                "Am I Pitta type?",
+                "Pitta dosha meaning",
+                "What are Pitta symptoms?",
+                "What is Pitta",
+                "Pitta",
+                "Define Pitta"
+            ],
+            "responses": [
+                "Pitta represents metabolism and transformation, composed of Fire and Water. Pitta types are intelligent and determined but prone to anger, acidity, and inflammation when imbalanced."
+            ]
+        },
+        {
+            "tag": "kapha_info",
+            "patterns": [
+                "What is Kapha dosha?",
+                "Explain Kapha characteristics",
+                "Tell me about Kapha",
+                "Am I Kapha type?",
+                "Kapha dosha meaning",
+                "What are Kapha symptoms?",
+                "What is Kapha",
+                "Kapha",
+                "Define Kapha"
+            ],
+            "responses": [
+                "Kapha represents structure and lubrication, composed of Earth and Water. Kapha individuals are calm, strong, and loving, but can struggle with lethargy and weight gain when imbalanced."
+            ]
+        },
+        {
+            "tag": "vata_diet",
+            "patterns": [
+                "What shoud I eat for Vata?",
+                "Vata dosha diet plan",
+                "Foods for Vata imbalance",
+                "Best food for Vata",
+                "What to avoid for Vata?",
+                "Diet to balance Vata"
+            ],
+            "responses": [
+                "For Vata, eat warm, cooked, and grounding foods. Include healthy fats like ghee, root vegetables, nuts, and warm spices like ginger. Avoid cold, dry, and raw foods."
+            ]
+        },
+        {
+            "tag": "pitta_diet",
+            "patterns": [
+                "What should I eat for Pitta?",
+                "Pitta dosha diet plan",
+                "Foods for Pitta imbalance",
+                "Best food for Pitta",
+                "What to avoid for Pitta?",
+                "Diet to balance Pitta"
+            ],
+            "responses": [
+                "For Pitta, focus on cooling and hydrating foods. Eat sweet fruits like melons, leafy greens, cucumber, and coconut. Avoid spicy, sour, and overly salty foods."
+            ]
+        },
+        {
+            "tag": "kapha_diet",
+            "patterns": [
+                "What should I eat for Kapha?",
+                "Kapha dosha diet plan",
+                "Foods for Kapha imbalance",
+                "Best food for Kapha",
+                "What to avoid for Kapha?",
+                "Diet to balance Kapha"
+            ],
+            "responses": [
+                "For Kapha, prefer light, warm, and spicy foods. Include fibrous vegetables, legumes, and spices like black pepper and turmeric. Avoid dairy, sweets, and heavy oily foods."
+            ]
+        },
+        {
+            "tag": "digestion",
+            "patterns": [
+                "I have digestion issues",
+                "My stomach hurts",
+                "I feel bloated",
+                "Gas problem",
+                "Acid reflux remedies",
+                "How to improve digestion?"
+            ],
+            "responses": [
+                "Ayurveda suggests improving your 'Agni' (digestive fire). Try sipping warm ginger tea, eating at regular times, and avoiding ice-cold drinks with meals."
+            ]
+        },
+        {
+            "tag": "sleep",
+            "patterns": [
+                "I cannot sleep",
+                "Insomnia remedies",
+                "I feel tired all the time",
+                "How to get better sleep?",
+                "Ayurveda for sleep",
+                "Sleeping trouble"
+            ],
+            "responses": [
+                "For better sleep, try drinking warm milk with a pinch of nutmeg before bed. Oil massage (Abhyanga) on the feet and avoiding screens 1 hour before sleep also helps."
+            ]
+        },
+        {
+            "tag": "stress",
+            "patterns": [
+                "I am very stressed",
+                "I have high anxiety",
+                "How to reduce stress?",
+                "I feel overwhelmed",
+                "Ayurveda for stress"
+            ],
+            "responses": [
+                "To reduce stress, practice Nadi Shodhana (ask: 'How to do Nadi Shodhana?'). Herbs like Ashwagandha and Brahmi are also excellent for calming the nervous system."
+            ]
+        },
+        {
+            "tag": "weight_loss",
+            "patterns": [
+                "How to lose weight?",
+                "Ayurvedic tips for weight loss",
+                "Obesity remedies",
+                "Burn fat naturally",
+                "Weight management",
+                "Reduce belly fat"
+            ],
+            "responses": [
+                "To manage weight, drink warm water with lemon and honey in the morning. Avoid snacking between meals, eat a light dinner before 7 PM, and stay active."
+            ]
+        },
+        {
+            "tag": "skin_care",
+            "patterns": [
+                "Tips for glowing skin",
+                "Acne remedies",
+                "Dry skin cure",
+                "Ayurveda for face",
+                "Skin problems",
+                "Clear skin naturally"
+            ],
+            "responses": [
+                "For healthy skin, stay hydrated and avoid excessive fried foods. A face mask of turmeric, sandalwood, and yogurt is excellent for a natural glow."
+            ]
+        },
+        {
+            "tag": "hair_care",
+            "patterns": [
+                "My hair is falling out",
+                "Remedies for hair growth",
+                "Dandruff cure",
+                "Ayurveda for hair",
+                "Prevent hair loss",
+                "Healthy hair tips"
+            ],
+            "responses": [
+                "For strong hair, massage your scalp regularly with warm coconut or sesame oil infused with Amla or Bhringraj. This nourishes the roots and reduces stress."
+            ]
+        },
+        {
+            "tag": "detox",
+            "patterns": [
+                "How to detox my body?",
+                "Ayurvedic cleanse",
+                "Remove toxins",
+                "What is Ama?",
+                "Simple detox plan",
+                "Purify body"
+            ],
+            "responses": [
+                "A simple Ayurvedic detox involves eating Kitchari (rice and moong dal) for a day and drinking plenty of warm water. Triphala powder at night also helps clear toxins."
+            ]
+        },
+        {
+            "tag": "immunity",
+            "patterns": [
+                "How to boost immunity?",
+                "Prevent getting sick",
+                "Natural immunity booster",
+                "Stay healthy tips",
+                "Fight cold and flu",
+                "Increase resistance"
+            ],
+            "responses": [
+                "To boost immunity (Ojas), consume Chyawanprash daily. Include turmeric, ginger, and tulsi in your diet, and ensure you get adequate rest."
+            ]
+        },
+        {
+            "tag": "herb_aloe_vera",
+            "patterns": [
+                "What is Aloe Vera?",
+                "Benefits of Aloe Vera",
+                "Tell me about Aloe Vera",
+                "Aloe Vera uses in Ayurveda",
+                "Is Aloe Vera good for digestion?",
+                "Medicinal properties of Aloe Vera"
+            ],
+            "responses": [
+                "Aloe Vera (*Aloe barbadensis*) creates a cooling effect that relieves heartburn, soothes digestive heat, and heals skin inflammation. Ideally used for Pitta imbalance. Note: Avoid ingestion during pregnancy."
+            ]
+        },
+        {
+            "tag": "herb_amalaki",
+            "patterns": [
+                "What is Amalaki?",
+                "Benefits of Amalaki",
+                "Tell me about Amalaki",
+                "Amla benefits for health",
+                "Is Amalaki good for immunity?",
+                "Uses of Amla in Ayurveda"
+            ],
+            "responses": [
+                "Amalaki (*Emblica officinalis*) is the highest natural source of Vitamin C. It cools the heart, removes excess Pitta, and is a powerful immunity booster/Rasayana."
+            ]
+        },
+        {
+            "tag": "herb_ashwagandha",
+            "patterns": [
+                "What is Ashwagandha?",
+                "Benefits of Ashwagandha",
+                "Tell me about Ashwagandha",
+                "Stress relief herb",
+                "Ashwagandha for sleep",
+                "Uses of Ashwagandha root"
+            ],
+            "responses": [
+                "Ashwagandha (*Withania somnifera*) is a powerful adaptogen that reduces stress and anxiety (Vata). It also heals adrenal fatigue, improves sleep quality, and boosts energy. Note: Avoid in pregnancy."
+            ]
+        },
+        {
+            "tag": "herb_bhringaraj",
+            "patterns": [
+                "What is Bhringaraj?",
+                "Benefits of Bhringaraj",
+                "Tell me about Bhringaraj",
+                "Hair growth herb",
+                "Bhringaraj for eyesight",
+                "Uses of Bhringaraj oil"
+            ],
+            "responses": [
+                "Bhringaraj (*Eclipta alba*) is known as the 'Ruler of Hair'. It is the best herb for promoting hair growth, cooling the liver, and enhancing vision. Note: Use cautiously in pregnancy."
+            ]
+        },
+        {
+            "tag": "herb_bibhitaki",
+            "patterns": [
+                "What is Bibhitaki?",
+                "Benefits of Bibhitaki",
+                "Tell me about Bibhitaki",
+                "Bibhitaki for cough",
+                "Uses of Bibhitaki fruit",
+                "Is Bibhitaki part of Triphala?"
+            ],
+            "responses": [
+                "Bibhitaki (*Terminalia bellirica*) helps clear congestion in the throat and lungs (Kapha). It is a key ingredient in Triphala and supports respiratory health. Note: Avoid in pregnancy."
+            ]
+        },
+        {
+            "tag": "herb_black_pepper",
+            "patterns": [
+                "What is Black Pepper?",
+                "Benefits of Black Pepper",
+                "Ayurveda and Black Pepper",
+                "Kali Mirch benefits",
+                "Black pepper for digestion",
+                "Uses of Black Pepper"
+            ],
+            "responses": [
+                "Black Pepper (*Piper nigrum*) is a strong metabolism booster. It burns 'Ama' (toxins), clears sinuses, and helps improve absorption of nutrients. Note: Heating; avoid in high Pitta."
+            ]
+        },
+        {
+            "tag": "herb_brahmi",
+            "patterns": [
+                "What is Brahmi?",
+                "Benefits of Brahmi",
+                "Tell me about Brahmi",
+                "Brain boosting herb",
+                "Brahmi for memory",
+                "Uses of Brahmi leaves"
+            ],
+            "responses": [
+                "Brahmi (*Bacopa monnieri*) is the premier herb for the brain. It enhances memory and focus, calms a racing mind, and supports the entire nervous system."
+            ]
+        },
+        {
+            "tag": "herb_cardamom",
+            "patterns": [
+                "What is Cardamom?",
+                "Benefits of Cardamom",
+                "Ayurveda and Cardamom",
+                "Elaichi benefits",
+                "Cardamom for fresh breath",
+                "Uses of Cardamom pods"
+            ],
+            "responses": [
+                "Cardamom (*Elettaria cardamomum*) is an aromatic digestive aid. It helps reduce gas, neutralizes acidity (Pitta), and freshens the breath naturally. Note: Safe in food amounts; avoid medicinal doses in pregnancy."
+            ]
+        },
+        {
+            "tag": "herb_chandan",
+            "patterns": [
+                "What is Chandan?",
+                "Benefits of Sandalwood",
+                "Tell me about Chandan",
+                "Sandalwood for skin",
+                "Cooling herbs in Ayurveda",
+                "Uses of Red Sandalwood"
+            ],
+            "responses": [
+                "Chandan (*Santalum album*) is deeply cooling. It stops burning sensations, calms anger (Pitta), and improves mental focus and skin complexion."
+            ]
+        },
+        {
+            "tag": "herb_chitrak",
+            "patterns": [
+                "What is Chitrak?",
+                "Benefits of Chitrak",
+                "Tell me about Chitrak",
+                "Herb to burn fat",
+                "Chitrak for digestion",
+                "Uses of Chitrak root",
+                "Chitrak for weight loss"
+            ],
+            "responses": [
+                "Chitrak (*Plumbago zeylanica*) is a powerful heating herb that ignites the digestive fire (Agni). It removes stagnation and is excellent for weight loss. Note: Extremely hot; avoid in pregnancy and high Pitta."
+            ]
+        },
+        {
+            "tag": "herb_coriander",
+            "patterns": [
+                "What is Coriander?",
+                "Benefits of Coriander",
+                "Coriander water benefits",
+                "Dhaniya uses in Ayurveda",
+                "Cooling spices",
+                "Coriander for urinary health"
+            ],
+            "responses": [
+                "Coriander (*Coriandrum sativum*) is a cooling digestive spice. It reduces burning sensations in the gut and is excellent for clearing urinary tract issues."
+            ]
+        },
+        {
+            "tag": "herb_cumin",
+            "patterns": [
+                "What is Cumin?",
+                "Benefits of Cumin",
+                "Jeera water benefits",
+                "Cumin for bloating",
+                "Digestive spices",
+                "Uses of Cumin seeds"
+            ],
+            "responses": [
+                "Cumin (*Cuminum cyminum*) is a gentle digestive stimulant. It is one of the best remedies for resolving bloating and improving nutrient absorption. Note: Safe in food amounts."
+            ]
+        },
+        {
+            "tag": "herb_fennel",
+            "patterns": [
+                "What is Fennel?",
+                "Benefits of Fennel",
+                "Saunf benefits",
+                "Fennel seeds for digestion",
+                "Sauf uses",
+                "Cooling digestive aids"
+            ],
+            "responses": [
+                "Fennel (*Foeniculum vulgare*) seeds are excellent for cooling the digestion. They relieve gas and cramping without increasing heat in the body. Note: Estrogenic; avoid in hormone-sensitive conditions and pregnancy."
+            ]
+        },
+        {
+            "tag": "herb_fenugreek",
+            "patterns": [
+                "What is Fenugreek?",
+                "Benefits of Fenugreek",
+                "Methi benefits",
+                "Fenugreek for diabetes",
+                "Methi seeds uses",
+                "Bitter herbs in Ayurveda"
+            ],
+            "responses": [
+                "Fenugreek (*Trigonella foenum-graecum*) is warming and bitter. It is excellent for balancing blood sugar, clearing skin issues, and reducing Kapha stagnation. Note: Avoid large amounts in pregnancy."
+            ]
+        },
+        {
+            "tag": "herb_garlic",
+            "patterns": [
+                "What is Garlic used for?",
+                "Benefits of Garlic",
+                "Ayurveda Garlic properties",
+                "Garlic for heart health",
+                "Is Garlic heating?",
+                "Uses of raw garlic"
+            ],
+            "responses": [
+                "Garlic (*Allium sativum*) is a natural antibiotic and heart protector. Its heating quality burns toxic Kapha and supports deep circulation. Note: Heating; avoid in high Pitta and bleeding disorders."
+            ]
+        },
+        {
+            "tag": "herb_ginger",
+            "patterns": [
+                "What is Ginger good for?",
+                "Benefits of Ginger",
+                "Tell me about Ginger",
+                "Adrak benefits",
+                "Ginger tea uses",
+                "Ginger for cold and flu"
+            ],
+            "responses": [
+                "Ginger (*Zingiber officinale*) is known as the 'Universal Medicine'. It burns excess mucus, stimulates sluggish digestion, and clears sinus congestion. Note: Heating; caution in ulcers and bleeding disorders."
+            ]
+        },
+        {
+            "tag": "herb_guduchi",
+            "patterns": [
+                "What is Guduchi?",
+                "Benefits of Guduchi",
+                "Tell me about Giloy",
+                "Giloy benefits for immunity",
+                "Amrita herb uses",
+                "Guduchi for fever"
+            ],
+            "responses": [
+                "Guduchi (*Tinospora cordifolia*) is a supreme immunity herb. It removes excess Pitta heat, fights fevers, and deeply detoxifies the system. Note: Caution in autoimmune diseases."
+            ]
+        },
+        {
+            "tag": "herb_guggul",
+            "patterns": [
+                "What is Guggul?",
+                "Benefits of Guggul",
+                "Tell me about Guggul",
+                "Guggul for cholesterol",
+                "Weight loss resin",
+                "Medicinal uses of Guggul"
+            ],
+            "responses": [
+                "Guggul (*Commiphora wightii*) is a powerful scraping agent. It is widely used to reduce weight, cholesterol, and clear lymphatic stagnation. Note: Avoid in pregnancy, breastfeeding, and bleeding disorders."
+            ]
+        },
+        {
+            "tag": "herb_haritaki",
+            "patterns": [
+                "What is Haritaki?",
+                "Benefits of Haritaki",
+                "Tell me about Haritaki",
+                "King of medicines",
+                "Haritaki for detox",
+                "Uses of Haritaki fruit"
+            ],
+            "responses": [
+                "Haritaki (*Terminalia chebula*) is the 'King of Medicines' for Vata. It is deeply detoxifying for the colon and improves cognitive health. Note: Avoid in pregnancy and dehydration."
+            ]
+        },
+        {
+            "tag": "herb_jatamansi",
+            "patterns": [
+                "What is Jatamansi?",
+                "Benefits of Jatamansi",
+                "Tell me about Jatamansi",
+                "Herb for calmness",
+                "Jatamansi for sleep",
+                "Uses of Jatamansi root"
+            ],
+            "responses": [
+                "Jatamansi (*Nardostachys jatamansi*) is a grounding root that calms a racing mind. It is excellent for panic, stress, and promoting deep sleep. Note: Avoid in pregnancy and severe depression."
+            ]
+        },
+        {
+            "tag": "herb_kutki",
+            "patterns": [
+                "What is Kutki?",
+                "Benefits of Kutki",
+                "Tell me about Kutki",
+                "Liver detox herb",
+                "Kutki for skin",
+                "Uses of Kutki powder"
+            ],
+            "responses": [
+                "Kutki (*Picrorhiza kurroa*) is an elite liver detoxifier. It stimulates healthy bile flow and is very effective for clearing skin allergies and heat. Note: Avoid in pregnancy."
+            ]
+        },
+        {
+            "tag": "herb_licorice",
+            "patterns": [
+                "What is Licorice?",
+                "Benefits of Licorice",
+                "Yashtimadhu benefits",
+                "Licorice for acidity",
+                "Mulethi uses",
+                "Herb for sore throat"
+            ],
+            "responses": [
+                "Licorice (*Glycyrrhiza glabra*) soothes the throat and gut lining. It naturally relieves acidity and acts as a moisturizing demulcent. Note: Avoid if you have high blood pressure or edema."
+            ]
+        },
+        {
+            "tag": "herb_manjistha",
+            "patterns": [
+                "What is Manjistha?",
+                "Benefits of Manjistha",
+                "Tell me about Manjistha",
+                "Blood purifying herb",
+                "Manjistha for skin glow",
+                "Uses of Manjistha powder"
+            ],
+            "responses": [
+                "Manjistha (*Rubia cordifolia*) is the premier blood cleanser in Ayurveda. It removes deep heat from the blood and clears skin blockages. Note: Avoid in pregnancy."
+            ]
+        },
+        {
+            "tag": "herb_mint",
+            "patterns": [
+                "What is Mint?",
+                "Benefits of Mint",
+                "Pudina benefits",
+                "Mint for indigestion",
+                "Cooling herbs",
+                "Uses of Mint leaves"
+            ],
+            "responses": [
+                "Mint (*Mentha*) provides immediate cooling to the system. It relieves indigestion/nausea and has a soothing effect on the mind. Note: may worsen acid reflux (GERD)."
+            ]
+        },
+        {
+            "tag": "herb_mustard",
+            "patterns": [
+                "What are Mustard Seeds?",
+                "Benefits of Mustard Seeds",
+                "Sarson benefits",
+                "Mustard for congestion",
+                "Heating spices",
+                "Uses of Mustard oil"
+            ],
+            "responses": [
+                "Mustard seeds (*Brassica nigra*) are heating and stimulating. They help clear cold, damp stagnation from the blood and lungs. Note: Very heating; avoid in high Pitta."
+            ]
+        },
+        {
+            "tag": "herb_neem",
+            "patterns": [
+                "What is Neem?",
+                "Benefits of Neem",
+                "Tell me about Neem",
+                "Neem for acne",
+                "Bitter herbs",
+                "Uses of Neem leaves"
+            ],
+            "responses": [
+                "Neem (*Azadirachta indica*) is nature's strongest blood purifier. It is bitter and cooling, making it excellent for clearing acne, rashes, and parasites. Note: Avoid in pregnancy and if trying to conceive."
+            ]
+        },
+        {
+            "tag": "herb_nutmeg",
+            "patterns": [
+                "What is Nutmeg?",
+                "Benefits of Nutmeg",
+                "Jaiphal for sleep",
+                "Nutmeg benefits",
+                "Natural sedative herbs",
+                "Uses of Nutmeg spice"
+            ],
+            "responses": [
+                "Nutmeg (*Myristica fragrans*) is a natural sedative. A pinch in warm milk improves sleep depth and calms Vata in the mind. Note: Avoid in pregnancy; high doses are toxic."
+            ]
+        },
+        {
+            "tag": "herb_pippali",
+            "patterns": [
+                "What is Pippali?",
+                "Benefits of Long Pepper",
+                "Tell me about Pippali",
+                "Pippali for lungs",
+                "Metabolism boosting herbs",
+                "Uses of Long Pepper"
+            ],
+            "responses": [
+                "Pippali (*Piper longum*) is a strong respiratory tonic. It boosts metabolic fire without over-heating and clears deep toxins. Note: Avoid long-term use and in pregnancy."
+            ]
+        },
+        {
+            "tag": "herb_punarnava",
+            "patterns": [
+                "What is Punarnava?",
+                "Benefits of Punarnava",
+                "Tell me about Punarnava",
+                "Herb for kidneys",
+                "Punarnava for swelling",
+                "Uses of Punarnava root"
+            ],
+            "responses": [
+                "Punarnava (*Boerhavia diffusa*) means 'Renewer'. It is a powerful diuretic that supports the kidneys and reduces water retention/swelling."
+            ]
+        },
+        {
+            "tag": "herb_rose",
+            "patterns": [
+                "What is Rose used for?",
+                "Benefits of Rose",
+                "Rose water uses",
+                "Rose for heat",
+                "Cooling flowers",
+                "Medicinal uses of Rose"
+            ],
+            "responses": [
+                "Rose (*Rosa*) soothes emotions and cools the heart. It is excellent for Pitta imbalances and improves skin glow."
+            ]
+        },
+        {
+            "tag": "herb_shankhpushpi",
+            "patterns": [
+                "What is Shankhpushpi?",
+                "Benefits of Shankhpushpi",
+                "Tell me about Shankhpushpi",
+                "Memory boosting flower",
+                "Shankhpushpi syrup uses",
+                "Herb for focus"
+            ],
+            "responses": [
+                "Shankhpushpi (*Convolvulus pluricaulis*) is a top brain tonic. It improves focus, memory, and concentration, and is great for mental fatigue. Note: May lower blood pressure."
+            ]
+        },
+        {
+            "tag": "herb_shatavari",
+            "patterns": [
+                "What is Shatavari?",
+                "Benefits of Shatavari",
+                "Tell me about Shatavari",
+                "Women's health herb",
+                "Shatavari for hormones",
+                "Uses of Shatavari powder"
+            ],
+            "responses": [
+                "Shatavari (*Asparagus racemosus*) is the primary rejuvenative for women. It supports hormonal balance, promotes hydration, and soothes dry tissues. Note: Estrogenic; avoid in hormone-sensitive tumors."
+            ]
+        },
+        {
+            "tag": "herb_trikatu",
+            "patterns": [
+                "What is Trikatu?",
+                "Benefits of Trikatu",
+                "Tell me about Trikatu",
+                "Trikatu churna uses",
+                "Pepper honey ginger mix",
+                "Herb for mucus"
+            ],
+            "responses": [
+                "Trikatu (Ginger + Black Pepper + Pippali) is a blend that burns Kapha mucus and stimulates digestion. Note: Very heating; avoid in pregnancy, ulcers, and high Pitta."
+            ]
+        },
+        {
+            "tag": "herb_triphala",
+            "patterns": [
+                "What is Triphala?",
+                "Benefits of Triphala",
+                "Tell me about Triphala",
+                "Triphala churna uses",
+                "Detox powder",
+                "Best ayurvedic formula"
+            ],
+            "responses": [
+                "Triphala (Amla + Bibhitaki + Haritaki) literally means 'Three Fruits'. It balances all three doshas, aids digestion, and boosts immunity. Note: Avoid during pregnancy due to downward energy (apana vayu)."
+            ]
+        },
+        {
+            "tag": "herb_tulsi",
+            "patterns": [
+                "What is Tulsi?",
+                "Benefits of Holy Basil",
+                "Tell me about Tulsi",
+                "Tulsi for cold",
+                "Holy Basil tea benefits",
+                "Sacred herbs of India"
+            ],
+            "responses": [
+                "Tulsi (*Ocimum sanctum*) is sacred in Ayurveda. It strengthens immunity, clears respiratory congestion, and adapts the body to stress."
+            ]
+        },
+        {
+            "tag": "herb_turmeric",
+            "patterns": [
+                "What is Turmeric?",
+                "Benefits of Turmeric",
+                "Haldi benefits",
+                "Turmeric for inflammation",
+                "Uses of Curcumin",
+                "Golden milk benefits"
+            ],
+            "responses": [
+                "Turmeric (*Curcuma longa*) is a potent anti-inflammatory and natural antibiotic. It clears lung congestion, heals skin, and boosts immunity."
+            ]
+        },
+        {
+            "tag": "herb_valerian",
+            "patterns": [
+                "What is Valerian?",
+                "Benefits of Valerian",
+                "Valerian root uses",
+                "Tagara benefits",
+                "Natural sleep aid",
+                "Herb for insomnia"
+            ],
+            "responses": [
+                "Valerian (*Valeriana wallichii*) is a powerful sedative herb. It settles the nervous system, manages anxiety, and promotes deep, heavy sleep. Note: Do not combine with other sedatives/alcohol."
+            ]
+        },
+        {
+            "tag": "checkin_spicy",
+            "patterns": [
+                "Why do I crave spicy food?",
+                "Spicy craving meaning",
+                "I want spicy food",
+                "Benefits of spicy food craving",
+                "Does spicy food increase Pitta?"
+            ],
+            "responses": [
+                "Spicy Craving is an intense desire for pungent flavors like chili or pepper. Craving spicy food often indicates sluggish digestion (low Agni) or high Kapha. Your body is asking for heat to stimulate metabolism and clear congestion."
+            ]
+        },
+        {
+            "tag": "checkin_sweet",
+            "patterns": [
+                "Why do I crave sweet food?",
+                "Sweet craving meaning",
+                "I want sugar",
+                "Ayurveda sweet craving",
+                "Does sweet food increase Kapha?"
+            ],
+            "responses": [
+                "Sweet Craving is a strong urge for sugary or carb-rich foods. Craving sweet food is the body's call for grounding and energy. It is common in Vata (seeking comfort) and Pitta (seeking cooling), but excess sweets increase Kapha."
+            ]
+        },
+        {
+            "tag": "checkin_heaviness",
+            "patterns": [
+                "Why does my body feel heavy?",
+                "Body heaviness meaning",
+                "I feel heavy",
+                "Lethargy and heaviness",
+                "Ayurveda body weightness",
+                "Gaurava meaning"
+            ],
+            "responses": [
+                "Body Heaviness ('Gaurava') refers to a feeling of lethargy or physical weight. It is a classic sign of Kapha imbalance or 'Ama' (toxins). It suggests a blockage in energy channels and a need for stimulating activity and light diet."
+            ]
+        },
+        {
+            "tag": "checkin_bowel_movement",
+            "patterns": [
+                "What is bowel movement?",
+                "Meaning of bowel movement",
+                "Elimination meaning",
+                "My bowel is dry",
+                "Loose bowel movement",
+                "Ayurveda poo types",
+                "Normal bowel movement"
+            ],
+            "responses": [
+                "Bowel Movement (Elimination) is the process of expelling waste from the body. It reflects your colon health. Dry/Hard stools indicate Vata imbalance, Loose/Hot stools indicate Pitta (heat), and Slow/Heavy stools indicate Kapha."
+            ]
+        },
+        {
+            "tag": "checkin_sleep_quality",
+            "patterns": [
+                "Why is my sleep poor?",
+                "Sleep quality meaning",
+                "I wake up tired",
+                "Ayurveda sleep hours",
+                "How much sleep do I need?"
+            ],
+            "responses": [
+                "Sleep Quality refers to how restful and continuous your sleep is. Sleep is when your body repairs. Poor sleep increases Vata (anxiety) and Pitta (inflammation). You need 7-8 hours of restful sleep for Ojas (vitality)."
+            ]
+        },
+        {
+            "tag": "checkin_stress",
+            "patterns": [
+                "Why am I so stressed?",
+                "Stress level meaning",
+                "High stress symptoms",
+                "Ayurveda stress management",
+                "Does stress affect Dosha?"
+            ],
+            "responses": [
+                "Stress is the body's reaction to mental or emotional pressure. High stress aggravates Vata dosha, leading to anxiety and instability. Managing stress via meditation and rest is crucial for maintaining your score."
+            ]
+        },
+        {
+            "tag": "checkin_energy",
+            "patterns": [
+                "Why is my energy low?",
+                "Morning energy meaning",
+                "Evening crash",
+                "I feel lethargic in morning",
+                "Ayurveda energy levels"
+            ],
+            "responses": [
+                "Energy Level reflects your vitality and stamina throughout the day. Low morning energy indicates Kapha stagnation (toxins). Low evening energy indicates Vata depletion (burnout). Balanced Meals and routine fix this."
+            ]
+        },
+        {
+            "tag": "checkin_body_temp",
+            "patterns": [
+                "Why does my body feel hot?",
+                "Why am I always cold?",
+                "Body heat meaning",
+                "Cold hands and feet",
+                "Ayurveda body temperature"
+            ],
+            "responses": [
+                "Body Temperature perception relates to whether you feel generally hot or cold. Feeling excess Heat is a Pitta sign (internal fire). Feeling constant Cold is a Vata/Kapha sign (poor circulation). Cooling or warming foods help balance this."
+            ]
+        },
+        {
+            "tag": "checkin_dryness",
+            "patterns": [
+                "Why is my skin dry?",
+                "Body dryness meaning",
+                "Dry lips and skin",
+                "Ayurveda for dryness",
+                "Vata skin symptoms"
+            ],
+            "responses": [
+                "Body Dryness refers to rough skin, dry lips, or internal lack of moisture. Dryness is the primary sign of high Vata. It means you lack 'Sneha' (oil/hydration). Abhyanga (oil massage) and drinking warm water are the best cures."
+            ]
+        },
+        {
+            "tag": "checkin_hydration",
+            "patterns": [
+                "How much water should I drink?",
+                "Hydration level meaning",
+                "Dehydration symptoms",
+                "Ayurveda water intake",
+                "Am I drinking enough water?"
+            ],
+            "responses": [
+                "Hydration Level indicates how much water content is in your tissues. Proper hydration flushes toxins (Ama). Dehydration spikes Vata immediately. Drink warm water throughout the day, not ice water."
+            ]
+        },
+        {
+            "tag": "checkin_mood",
+            "patterns": [
+                "Why am I irritable?",
+                "Mood swings meaning",
+                "Anxious mood",
+                "Ayurveda and emotions",
+                "Mental health Ayurveda"
+            ],
+            "responses": [
+                "Mood is your temporary emotional state. Mood reflects your Dosha: Anxiety = Vata, Irritability/Anger = Pitta, Lethargy/Sadness = Kapha. Balancing your Dosha directly heals your mood."
+            ]
+        },
+        {
+            "tag": "checkin_activity",
+            "patterns": [
+                "Exercise for my dosha",
+                "Physical activity meaning",
+                "Should I workout?",
+                "Ayurveda exercise",
+                "Best workout for me"
+            ],
+            "responses": [
+                "Physical Activity includes exercise, movement, and daily exertion. Movement moves lymph and energy. Kapha needs intense cardio. Pitta needs moderate swimming/hiking. Vata needs gentle yoga and walking."
+            ]
+        },
+        {
+            "tag": "checkin_appetite",
+            "patterns": [
+                "Why is my appetite low?",
+                "Variable appetite",
+                "Strong hunger pitta",
+                "Ayurveda appetite meaning",
+                "Agni and hunger"
+            ],
+            "responses": [
+                "Appetite is your desire for food and hunger strength. Appetite shows your 'Agni' (Digestive Fire). High/Sharp = Pitta. Low/Heavy = Kapha. Variable/Gassy = Vata. Eat according to your hunger type."
+            ]
+        },
+        {
+            "tag": "checkin_digestion",
+            "patterns": [
+                "Digestion meaning",
+                "Bloating symptoms",
+                "Acidity causes",
+                "Heavy digestion",
+                "Gut health Ayurveda"
+            ],
+            "responses": [
+                "Digestion is the process of breaking down food into energy. Digestion is the root of health. Bloating = Vata. Burning = Pitta. Heaviness = Kapha. Keep your gut light and warm for best results."
+            ]
+        },
+        {
+            "tag": "yoga_vata",
+            "patterns": [
+                "Yoga for Vata",
+                "Best breathing for Vata",
+                "Exercises for Vata dosha",
+                "Calming yoga",
+                "Nadi Shodhana benefits",
+                "Vata workout"
+            ],
+            "responses": [
+                "For Vata, focus on grounding and stability. Best poses: Mountain Pose, Tree Pose, Warrior I, and Child’s Pose. Best Breathing: Alternate Nostril Breathing (Nadi Shodhana) to calm anxiety."
+            ]
+        },
+        {
+            "tag": "yoga_pitta",
+            "patterns": [
+                "Yoga for Pitta",
+                "Best breathing for Pitta",
+                "Exercises for Pitta dosha",
+                "Cooling yoga",
+                "Sheetali breath benefits",
+                "Pitta workout"
+            ],
+            "responses": [
+                "For Pitta, focus on cooling and releasing heat. Best poses: Moon Salutations, Cobra, Bow Pose, and Fish Pose. Best Breathing: Sheetali Breath (Cooling Breath) to reduce internal fire."
+            ]
+        },
+        {
+            "tag": "yoga_kapha",
+            "patterns": [
+                "Yoga for Kapha",
+                "Best breathing for Kapha",
+                "Exercises for Kapha dosha",
+                "Energizing yoga",
+                "Kapalabhati benefits",
+                "Kapha workout"
+            ],
+            "responses": [
+                "For Kapha, focus on vigorous movement and heat. Best poses: Sun Salutations (Fast), Warrior II, Boat Pose, and Chair Pose. Best Breathing: Kapalabhati (Skull Shining) and Lion’s Breath."
+            ]
+        },
+        {
+            "tag": "pose_tadasana",
+            "patterns": [
+                "How to do Mountain Pose?",
+                "Tadasana benefits",
+                "Is Mountain pose good for Vata?",
+                "Instructions for Tadasana"
+            ],
+            "responses": [
+                "Mountain Pose (Tadasana) grounds Vata energy. BENEFITS: Stabilizes the mind and improves posture. HOW TO: Stand tall with feet together, rooting down through your heels while lifting through your crown. Breathe deeply."
+            ]
+        },
+        {
+            "tag": "pose_tree",
+            "patterns": [
+                "How to do Tree Pose?",
+                "Vrksasana benefits",
+                "Tree pose instructions",
+                "Balancing yoga for Vata"
+            ],
+            "responses": [
+                "Tree Pose (Vrksasana) improves focus and calms a restless Vata mind. HOW TO: Stand on one leg, placing the other foot on your inner thigh (avoid the knee). Bring hands to prayer position and focus on one point."
+            ]
+        },
+        {
+            "tag": "pose_warrior_1",
+            "patterns": [
+                "How to do Warrior I?",
+                "Virabhadrasana I benefits",
+                "Warrior 1 for Vata",
+                "Grounding yoga poses"
+            ],
+            "responses": [
+                "Warrior I (Virabhadrasana I) builds stability and stamina. BENEFITS: Grounds Vata and builds heat. HOW TO: Lunge one leg forward, keeping the back leg straight and foot flat at 45 degrees. Raise arms overhead."
+            ]
+        },
+        {
+            "tag": "pose_childs_pose",
+            "patterns": [
+                "How to do Child's Pose?",
+                "Balasana benefits",
+                "Restorative yoga for Vata",
+                "Relaxing yoga pose"
+            ],
+            "responses": [
+                "Child's Pose (Balasana) is deeply restorative for Vata anxiety. HOW TO: Kneel on the floor, sit back on your heels, and fold forward, resting your forehead on the mat. Breathe into your back."
+            ]
+        },
+        {
+            "tag": "pose_savasana",
+            "patterns": [
+                "How to do Corpse Pose?",
+                "Savasana benefits",
+                "Relaxation pose",
+                "Yoga for stress"
+            ],
+            "responses": [
+                "Corpse Pose (Savasana) allows full relaxation and integration. BENEFITS: Soothes the nervous system, essential for Vata. HOW TO: Lie flat on your back, arms by sides, palms up. Close eyes and relax every muscle."
+            ]
+        },
+        {
+            "tag": "pose_viparita_karani",
+            "patterns": [
+                "How to do Legs Up the Wall?",
+                "Viparita Karani benefits",
+                "Yoga for insomnia",
+                "Anxiety relief yoga"
+            ],
+            "responses": [
+                "Legs Up the Wall (Viparita Karani) reverses gravity flow. BENEFITS: Calms the mind and relieves anxiety or insomnia. HOW TO: Lie on your back with your butt close to a wall and extend your legs straight up the wall."
+            ]
+        },
+        {
+            "tag": "pose_paschimottanasana",
+            "patterns": [
+                "How to do Seated Forward Bend?",
+                "Paschimottanasana benefits",
+                "Calming forward folds",
+                "Yoga for nerves"
+            ],
+            "responses": [
+                "Seated Forward Bend is calming and introspective. BENEFITS: Stretches the entire back body, soothing Vata nerves. HOW TO: Sit with legs straight. Inhale to lengthen spine, exhale to fold over legs, holding feet or shins."
+            ]
+        },
+        {
+            "tag": "pose_bridge",
+            "patterns": [
+                "How to do Bridge Pose?",
+                "Setu Bandhasana benefits",
+                "Backbends for Vata",
+                "Yoga to open chest"
+            ],
+            "responses": [
+                "Bridge Pose (Setu Bandhasana) opens the chest while keeping legs grounded. BENEFITS: Releases tension in the back. HOW TO: Lie on back, knees bent. Press feet into floor to lift hips. Clasp hands under back if possible."
+            ]
+        },
+        {
+            "tag": "pose_vajrasana",
+            "patterns": [
+                "How to do Thunderbolt Pose?",
+                "Vajrasana benefits",
+                "Yoga for digestion",
+                "Sitting pose for Vata"
+            ],
+            "responses": [
+                "Thunderbolt Pose (Vajrasana) is excellent for digestion (Vata's weak point). BENEFITS: Aids post-meal digestion. HOW TO: Kneel and sit back on your heels. Keep spine straight and hands on knees. Breathe gently."
+            ]
+        },
+        {
+            "tag": "breath_nadi_shodhana",
+            "patterns": [
+                "How to do Nadi Shodhana?",
+                "Alternate Nostril Breathing instructions",
+                "Breathing for anxiety",
+                "Best breath for anxiety",
+                "Breathing exercises for stress",
+                "Pranayama for Vata"
+            ],
+            "responses": [
+                "Alternate Nostril Breathing (Nadi Shodhana) balances the brain and calms Vata immediately. HOW TO: Close right nostril with thumb, inhale left. Close left, exhale right. Inhale right, close right, exhale left. Repeat."
+            ]
+        },
+        {
+            "tag": "pose_moon_salutation",
+            "patterns": [
+                "How to do Moon Salutation?",
+                "Chandra Namaskar benefits",
+                "Cooling yoga flow",
+                "Yoga for Pitta heat"
+            ],
+            "responses": [
+                "Moon Salutations (Chandra Namaskar) are a slow, low flow. BENEFITS: Soothes Pitta fire and calms aggression. HOW TO: Flow carefully side-to-side on your mat, incorporating side stretches and deep squats (Goddess pose)."
+            ]
+        },
+        {
+            "tag": "pose_cobra",
+            "patterns": [
+                "How to do Cobra Pose?",
+                "Bhujangasana benefits",
+                "Yoga for back pain",
+                "Instructions for Cobra pose"
+            ],
+            "responses": [
+                "Cobra Pose (Bhujangasana) opens the chest. BENEFITS: Gentle heating for Vata/Kapha, opens Pitta emotions. HOW TO: Lie on stomach, hands under shoulders. Inhale and gently lift your chest using back muscles, keeping elbows hugging ribs."
+            ]
+        },
+        {
+            "tag": "pose_fish",
+            "patterns": [
+                "How to do Fish Pose?",
+                "Matsyasana benefits",
+                "Thyroid yoga pose",
+                "Yoga for Pitta emotions"
+            ],
+            "responses": [
+                "Fish Pose (Matsyasana) opens the throat. BENEFITS: Cools the thyroid and releases pent-up Pitta emotions. HOW TO: Lie on back, hands under hips. Press into elbows to lift chest and drop head back gently to floor."
+            ]
+        },
+        {
+            "tag": "pose_bow",
+            "patterns": [
+                "How to do Bow Pose?",
+                "Dhanurasana benefits",
+                "Yoga for liver",
+                "Pitta detox yoga"
+            ],
+            "responses": [
+                "Bow Pose (Dhanurasana) massages digestive organs. BENEFITS: Releases excess bile and heat from liver/spleen. HOW TO: Lie on stomach, bend knees, grab ankles. Inhale to kick feet back and lift chest."
+            ]
+        },
+        {
+            "tag": "pose_shoulder_stand",
+            "patterns": [
+                "How to do Shoulder Stand?",
+                "Sarvangasana benefits",
+                "Cooling inversions",
+                "Yoga for thyroid"
+            ],
+            "responses": [
+                "Shoulder Stand (Sarvangasana) is a cooling inversion. BENEFITS: Pools cool blood in the throat, calming the fiery Pitta mind. HOW TO: Lie on back, lift hips and legs vertical, supporting lower back with hands."
+            ]
+        },
+        {
+            "tag": "pose_uttanasana",
+            "patterns": [
+                "How to do Standing Forward Bend?",
+                "Uttanasana benefits",
+                "Cooling forward folds",
+                "Yoga to release heat"
+            ],
+            "responses": [
+                "Standing Forward Bend (Uttanasana) is cooling and surrendering. BENEFITS: Releases heat from the head and calms the ego. HOW TO: Stand tall, exhale to fold forward from hips. Let head hang heavy."
+            ]
+        },
+        {
+            "tag": "pose_pigeon",
+            "patterns": [
+                "How to do Pigeon Pose?",
+                "Eka Pada Rajakapotasana benefits",
+                "Hip opener yoga",
+                "Releasing emotions yoga"
+            ],
+            "responses": [
+                "Pigeon Pose releases deep tension. BENEFITS: Releases stored anger (Pitta emotion) from hips. HOW TO: From Down Dog, bring one knee forward to wrist. Extend back leg straight. Fold forward over front leg."
+            ]
+        },
+        {
+            "tag": "pose_camel",
+            "patterns": [
+                "How to do Camel Pose?",
+                "Ustrasana benefits",
+                "Heart opener yoga",
+                "Yoga for solar plexus"
+            ],
+            "responses": [
+                "Camel Pose (Ustrasana) is an expansive heart opener. BENEFITS: Releases heat from the solar plexus (Pitta's seat). HOW TO: Kneel up. Place hands on lower back or heels. Inhale to lift chest and lean back gently."
+            ]
+        },
+        {
+            "tag": "pose_supine_twist",
+            "patterns": [
+                "How to do Supine Twist?",
+                "Spinal twist benefits",
+                "Cooling twist",
+                "Detox yoga pose"
+            ],
+            "responses": [
+                "Supine Spinal Twist neutralizes the spine. BENEFITS: Gently 'wrings out' heat from the abdomen. HOW TO: Lie on back, hug knees in. Drop knees to one side, gaze to the other. Repeat on other side."
+            ]
+        },
+        {
+            "tag": "breath_sheetali",
+            "patterns": [
+                "How to do Sheetali Pranayama?",
+                "Cooling breath instructions",
+                "Breathing for anger",
+                "Pranayama for Pitta"
+            ],
+            "responses": [
+                "Sheetali Breath literally cools the blood. BENEFITS: Reduces Pitta inflammation. HOW TO: Curl your tongue into a tube (like a taco). Inhale deeply through the tube acting like a straw. Close mouth and exhale through nose."
+            ]
+        },
+        {
+            "tag": "pose_sun_salutation",
+            "patterns": [
+                "How to do Sun Salutation?",
+                "Surya Namaskar benefits",
+                "Yoga for weight loss",
+                "Kapha warmup",
+                "Surya Namaskar instructions"
+            ],
+            "responses": [
+                "Sun Salutations (Surya Namaskar) build internal fire. BENEFITS: Burns Kapha stagnation and moves lymph. HOW TO: Flow rapidly: Mountain -> Up Reach -> Fold -> Plank -> Chaturanga -> Up Dog -> Down Dog -> Step Forward -> Fold -> Mountain."
+            ]
+        },
+        {
+            "tag": "pose_warrior_2",
+            "patterns": [
+                "How to do Warrior II?",
+                "Virabhadrasana II benefits",
+                "Warrior 2 instructions",
+                "Yoga for strength"
+            ],
+            "responses": [
+                "Warrior II opens hips and chest. BENEFITS: Builds heat and focus for Kapha. HOW TO: Step feet wide. Turn front foot out, bend knee to 90 degrees. Extend arms to sides. Gaze over front hand."
+            ]
+        },
+        {
+            "tag": "pose_triangle",
+            "patterns": [
+                "How to do Triangle Pose?",
+                "Trikonasana benefits",
+                "Side stretch yoga",
+                "Yoga for lungs"
+            ],
+            "responses": [
+                "Triangle Pose (Trikonasana) opens the side body. BENEFITS: Opens lungs (Kapha seat) and improves digestion. HOW TO: Step wide, keep legs straight. Reach forward and hinge at hip, hand to shin/floor, other arm up."
+            ]
+        },
+        {
+            "tag": "pose_boat",
+            "patterns": [
+                "How to do Boat Pose?",
+                "Navasana benefits",
+                "Yoga for core strength",
+                "Kapha belly fat yoga"
+            ],
+            "responses": [
+                "Boat Pose (Navasana) ignites the solar plexus. BENEFITS: Burns Kapha lethargy and fat. HOW TO: Sit on floor, lean back. Lift legs up (V-shape). Extend arms forward. Balance on sit bones."
+            ]
+        },
+        {
+            "tag": "pose_chair",
+            "patterns": [
+                "How to do Chair Pose?",
+                "Utkatasana benefits",
+                "Metabolism booster yoga",
+                "Yoga for thighs"
+            ],
+            "responses": [
+                "Chair Pose (Utkatasana) builds strong heat. BENEFITS: Instant metabolism booster. HOW TO: Stand tall. Inhale arms up. Exhale sit hips back and down as if in a chair. Keep chest lifted."
+            ]
+        },
+        {
+            "tag": "pose_plank",
+            "patterns": [
+                "How to do Plank Pose?",
+                "Phalakasana benefits",
+                "Core stability yoga",
+                "Yoga for stamina"
+            ],
+            "responses": [
+                "Plank Pose builds inner heat and stability. BENEFITS: Demanding posture to fight Kapha inertia. HOW TO: From pushup position, align shoulders over wrists. Engage core and legs to make a straight line."
+            ]
+        },
+        {
+            "tag": "pose_locust",
+            "patterns": [
+                "How to do Locust Pose?",
+                "Salabhasana benefits",
+                "Back strengthening yoga",
+                "Yoga for depression"
+            ],
+            "responses": [
+                "Locust Pose (Salabhasana) strengthens back. BENEFITS: Opens chest, countering Kapha depression/slump. HOW TO: Lie on stomach. Inhale to lift chest, arms, and legs off floor. Gaze forward."
+            ]
+        },
+        {
+            "tag": "breath_kapalabhati",
+            "patterns": [
+                "How to do Kapalabhati?",
+                "Skull shining breath instructions",
+                "Breathing for weight loss",
+                "Pranayama for Kapha"
+            ],
+            "responses": [
+                "Kapalabhati (Skull Shining Breath) ignites metabolic fire. BENEFITS: Clears sinuses and stimulates digestion. HOW TO: Sit tall. Take a passive inhale, then forcefully exhale through nose snapping belly in. Repeat 30-50 times."
+            ]
+        },
+        {
+            "tag": "breath_lions_breath",
+            "patterns": [
+                "How to do Lion's Breath?",
+                "Simhasana benefits",
+                "Breathing for throat",
+                "Yoga to clear mucus"
+            ],
+            "responses": [
+                "Lion’s Breath (Simhasana) releases tension. BENEFITS: Clears mucus and stagnation from throat. HOW TO: Inhale deep. Exhale forcefully with mouth wide open, tongue sticking out, making a 'Haaaa' sound. Gaze up."
+            ]
+        }
+    ]
+}

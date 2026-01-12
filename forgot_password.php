@@ -93,7 +93,7 @@ try {
 
     // 🔴 CHANGE THESE TWO LINES ONLY
     $mail->Username = 'saimaniesward@gmail.com';      // YOUR GMAIL
-    $mail->Password = 'zrwt ikkz jics izkb';        // GMAIL APP PASSWORD
+    $mail->Password = 'tmcm pmar ndny eybi';        // GMAIL APP PASSWORD
 
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;

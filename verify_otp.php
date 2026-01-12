@@ -85,7 +85,8 @@ try {
         $update = $conn->prepare(
             "UPDATE users
              SET reset_otp = NULL,
-                 reset_otp_expires = NULL
+                 reset_otp_expires = NULL,
+                 is_verified = 1
              WHERE email = ?"
         );
         $update->bind_param("s", $email);

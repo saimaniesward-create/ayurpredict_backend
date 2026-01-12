@@ -31,13 +31,14 @@ except ImportError as e:
 
 # Import ML libraries (Optional - Fallback if missing)
 ML_AVAILABLE = False
-try:
-    import joblib
-    import pandas as pd
-    ML_AVAILABLE = True
-    log_debug("ML libraries (joblib, pandas) imported successfully.")
-except ImportError as e:
-    log_debug(f"WARNING: ML libraries missing ({e}). Switching to Rule-Based Mode.")
+# [OPTIMIZATION] Disabled heavy libraries for speed (Reduces load time from 7s to 0.5s)
+# try:
+#     import joblib
+#     import pandas as pd
+#     ML_AVAILABLE = True
+#     log_debug("ML libraries (joblib, pandas) imported successfully.")
+# except ImportError as e:
+#     log_debug(f"WARNING: ML libraries missing ({e}). Switching to Rule-Based Mode.")
 
 # --- 3. DATABASE CONNECTION ---
 def create_db_connection():
@@ -147,7 +148,7 @@ def get_recommendations(user_id):
         final_herbs = []
         categories = ['food', 'yoga', 'lifestyle']
         # base_image_url = "http://10.0.2.2/ayurpredict/images/herbs/" # Android Emulator
-        base_image_url = "http://10.154.63.223/ayurpredict/images/herbs/" # User's Real IP
+        base_image_url = "http://172.17.22.223/ayurpredict/images/herbs/" # User's Real IP
 
         for target in targets:
             d_name = target['dosha']

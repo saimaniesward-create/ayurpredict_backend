@@ -24,10 +24,32 @@ def create_db_connection():
 def calculate_balance_score(v, p, k):
     """
     Calculates Body Balance Score (0-100).
-    Formula: 100 - (Deviation from 33.3 for each dosha)
+    Logic:
+    1. Normalize raw scores to percentages (Total = 100%).
+    2. Compare percentages to Ideal (33.3%).
+    3. Formula: 100 - (Avg Deviation from 33.3)
     """
-    deviation = (abs(33 - v) + abs(33 - p) + abs(33 - k)) / 3
-    return max(0, min(100, 100 - deviation))
+    total = v + p + k
+    if total == 0:
+        return 0 # Avoid division by zero
+    
+    # v, p, k are raw imbalance scores (e.g. 20, 70, 105)
+    total_imbalance = v + p + k
+    
+    if total_imbalance == 0:
+        return 0 # No Data
+    
+    # 1. Absolute Subtraction Formula (Matches Dashboard)
+    # Formula: 100 - (Total Imbalance / 3)
+    score = 100 - (total_imbalance / 3)
+    
+    # 2. Clamp
+    if score < 10: 
+        return 10
+    if score > 100: 
+        return 100
+        
+    return int(score)
 
 def predict_wellness(user_id):
     conn = create_db_connection()

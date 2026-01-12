@@ -56,7 +56,7 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'saimaniesward@gmail.com';
-    $mail->Password = 'zrwt ikkz jics izkb'; // Gmail App Password
+    $mail->Password = 'tmcm pmar ndny eybi'; // Gmail App Password
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 

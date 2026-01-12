@@ -93,6 +93,32 @@ if ($stmt_score) {
     $stmt_score->bind_param("isiiis", $user_id, $checkin_date, $vata, $pitta, $kapha, $dominant);
     $stmt_score->execute();
 }
+
+// 4.1. CALCULATE & SAVE BALANCE SCORE (Added Fix)
+// Formula: 100 - (Total Imbalance / 3)
+$total_imbalance = $vata + $pitta + $kapha;
+$b_score = 0;
+
+if ($total_imbalance > 0) {
+    $b_score = 100 - ($total_imbalance / 3);
+    // Clamp
+    if ($b_score < 10) $b_score = 10;
+    if ($b_score > 100) $b_score = 100;
+} 
+// If total_imbalance is 0, score remains 0 (No data)
+
+// Save to body_balance_scores
+$stmt_bal = $conn->prepare("INSERT INTO body_balance_scores (user_id, checkin_date, score) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE score=VALUES(score)");
+if ($stmt_bal) {
+    // Explicit Cast to Integer to be safe
+    $final_b_score = (int)$b_score;
+    $stmt_bal->bind_param("isi", $user_id, $checkin_date, $final_b_score);
+    if (!$stmt_bal->execute()) {
+        // If failed, log it (visible in PHPMailer or error logs if enabled) or append to message
+        // For now, we rely on the status.
+    }
+}
+
 // --- 5. CONSISTENCY (STREAK) LOGIC ---
 $currentStreak = 0;
 try {
@@ -128,6 +154,7 @@ echo json_encode([
     "status" => "success",
     "message" => "Check-in Saved",
     "scores" => ["Vata" => (int)$vata, "Pitta" => (int)$pitta, "Kapha" => (int)$kapha],
+    "balance_score" => (int)$b_score, // [FIX] Added for Android Toast
     "dominant" => $dominant,
     "current_streak" => (int)$currentStreak
 ]);
