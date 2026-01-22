@@ -11,6 +11,11 @@ if (!$user_id) {
     exit;
 }
 // 2. SAVE INPUTS
+// DEBUG LOGGING
+$debugFile = "debug_checkin_v2.txt";
+file_put_contents($debugFile, "---- Checkin at " . date("Y-m-d H:i:s") . " ----\n", FILE_APPEND);
+file_put_contents($debugFile, "Input: " . print_r($data, true) . "\n", FILE_APPEND);
+
 $stmt = $conn->prepare("INSERT INTO daily_checkins (user_id, checkin_date, sleep_hours, sleep_quality, stress_level, morning_energy, evening_energy, body_dryness, body_heat, body_heaviness, cold_body, sweet_craving, spicy_craving, elimination, hydration_level, mood, physical_activity, digestion, appetite) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE sleep_hours=VALUES(sleep_hours), sleep_quality=VALUES(sleep_quality), stress_level=VALUES(stress_level), morning_energy=VALUES(morning_energy), evening_energy=VALUES(evening_energy), body_dryness=VALUES(body_dryness), body_heat=VALUES(body_heat), body_heaviness=VALUES(body_heaviness), cold_body=VALUES(cold_body), sweet_craving=VALUES(sweet_craving), spicy_craving=VALUES(spicy_craving), elimination=VALUES(elimination), hydration_level=VALUES(hydration_level), mood=VALUES(mood), physical_activity=VALUES(physical_activity), digestion=VALUES(digestion), appetite=VALUES(appetite)");
 $stmt->bind_param("issssssiiiiiisissss", $user_id, $checkin_date, $data['sleep_hours'], $data['sleep_quality'], $data['stress_level'], $data['morning_energy'], $data['evening_energy'], $data['body_dryness'], $data['body_heat'], $data['body_heaviness'], $data['cold_body'], $data['sweet_craving'], $data['spicy_craving'], $data['elimination'], $data['hydration_level'], $data['mood'], $data['physical_activity'], $data['digestion'], $data['appetite']);
 $stmt->execute();
@@ -99,12 +104,11 @@ if ($stmt_score) {
 $total_imbalance = $vata + $pitta + $kapha;
 $b_score = 0;
 
-if ($total_imbalance > 0) {
-    $b_score = 100 - ($total_imbalance / 3);
-    // Clamp
-    if ($b_score < 10) $b_score = 10;
-    if ($b_score > 100) $b_score = 100;
-} 
+// Fix: Calculate score regardless of imbalance. If 0, score is 100.
+$b_score = 100 - ($total_imbalance / 3);
+// Clamp
+if ($b_score < 10) $b_score = 10;
+if ($b_score > 100) $b_score = 100; 
 // If total_imbalance is 0, score remains 0 (No data)
 
 // Save to body_balance_scores
@@ -114,10 +118,12 @@ if ($stmt_bal) {
     $final_b_score = (int)$b_score;
     $stmt_bal->bind_param("isi", $user_id, $checkin_date, $final_b_score);
     if (!$stmt_bal->execute()) {
-        // If failed, log it (visible in PHPMailer or error logs if enabled) or append to message
-        // For now, we rely on the status.
+        file_put_contents($debugFile, "DB Error (Balance): " . $stmt_bal->error . "\n", FILE_APPEND);
+    } else {
+        file_put_contents($debugFile, "Saved Score: " . $final_b_score . "\n", FILE_APPEND);
     }
 }
+file_put_contents($debugFile, "Calculated: V=$vata P=$pitta K=$kapha Imbalance=$total_imbalance Score=$b_score\n", FILE_APPEND);
 
 // --- 5. CONSISTENCY (STREAK) LOGIC ---
 $currentStreak = 0;

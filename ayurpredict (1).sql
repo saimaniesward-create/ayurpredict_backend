@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 06, 2026 at 05:11 AM
--- Server version: 10.4.32-MariaDB
+-- Generation Time: Jan 22, 2026 at 03:28 AM
+-- Server version: 10.4.32-MariaDB-log
 -- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -40,15 +40,32 @@ CREATE TABLE `body_balance_scores` (
 --
 
 INSERT INTO `body_balance_scores` (`id`, `user_id`, `checkin_date`, `score`, `created_at`) VALUES
-(1, 15, '2026-01-03', 40, '2026-01-03 08:19:48'),
-(4, 15, '2026-01-04', 15, '2026-01-04 02:50:56'),
+(1, 15, '2026-01-03', 63, '2026-01-03 08:19:48'),
+(2, 15, '2026-01-20', 53, '2026-01-20 01:48:38'),
+(4, 15, '2026-01-04', 61, '2026-01-04 02:50:56'),
 (6, 16, '2026-01-04', 50, '2026-01-04 03:48:30'),
 (7, 17, '2026-01-04', 20, '2026-01-04 04:38:02'),
 (8, 20, '2026-01-04', 70, '2026-01-04 14:17:22'),
 (9, 15, '2026-01-05', 20, '2026-01-05 00:19:54'),
 (18, 17, '2026-01-05', 20, '2026-01-05 17:10:01'),
 (19, 15, '2026-01-06', 20, '2026-01-06 00:59:34'),
-(21, 17, '2026-01-06', 5, '2026-01-06 01:05:07');
+(21, 17, '2026-01-06', 5, '2026-01-06 01:05:07'),
+(32, 15, '2026-01-07', 80, '2026-01-18 10:30:46'),
+(33, 15, '2026-01-08', 75, '2026-01-18 10:30:46'),
+(34, 15, '2026-01-09', 85, '2026-01-18 10:30:46'),
+(35, 15, '2026-01-10', 80, '2026-01-18 10:30:46'),
+(36, 15, '2026-01-11', 60, '2026-01-18 10:30:46'),
+(37, 15, '2026-01-12', 70, '2026-01-18 10:30:46'),
+(38, 15, '2026-01-13', 82, '2026-01-18 10:30:46'),
+(39, 15, '2026-01-14', 88, '2026-01-18 10:30:46'),
+(40, 15, '2026-01-15', 78, '2026-01-18 10:30:46'),
+(41, 15, '2026-01-16', 65, '2026-01-18 10:30:46'),
+(42, 15, '2026-01-17', 80, '2026-01-18 10:30:46'),
+(61, 15, '2026-01-18', 90, '2026-01-18 11:42:43'),
+(65, 15, '2026-01-19', 33, '2026-01-19 04:20:10'),
+(69, 15, '2026-01-21', 60, '2026-01-21 05:37:03'),
+(71, 22, '2026-01-21', 61, '2026-01-21 14:45:43'),
+(75, 22, '2026-01-22', 40, '2026-01-22 01:50:42');
 
 -- --------------------------------------------------------
 
@@ -89,7 +106,7 @@ CREATE TABLE `daily_checkins` (
 --
 
 INSERT INTO `daily_checkins` (`id`, `user_id`, `checkin_date`, `sleep_hours`, `sleep_quality`, `stress_level`, `morning_energy`, `evening_energy`, `body_dryness`, `body_heat`, `body_heaviness`, `cold_body`, `sweet_craving`, `spicy_craving`, `elimination`, `hydration_level`, `mood`, `physical_activity`, `digestion`, `appetite`, `created_at`, `vata_score`, `pitta_score`, `kapha_score`, `dominant_dosha`) VALUES
-(1, 5, '2025-12-27', 6, 'Moderate', 'High', 'Low', 'Normal', 1, 1, 0, NULL, 1, 0, NULL, NULL, 'Anxious', 'Light', 'Heavy', 'Strong', '2025-12-27 04:21:53', 0, 0, 0, NULL),
+(2, 15, '2026-01-20', 6, 'Moderate', 'High', 'Low', 'Low', 1, 0, 1, 0, 0, 0, 'Regular', 5, 'Calm', 'Light', 'Normal', 'Strong', '2026-01-20 01:50:45', 0, 0, 0, NULL),
 (3, 1, '2025-12-27', 1, '', '', '', '', 1, 0, 0, 0, 0, 1, 'Regular', 8, 'Calm', '', '', 'Normal', '2025-12-27 08:53:31', 0, 0, 0, NULL),
 (8, 15, '2026-01-03', 7, 'Moderate', 'Medium', 'Normal', 'Normal', 1, 1, 1, 0, 0, 0, 'Regular', 7, 'Calm', 'Light', 'Heavy', 'Strong', '2026-01-03 03:23:24', 0, 0, 0, NULL),
 (54, 15, '2026-01-04', 7, 'Moderate', 'Low', 'Normal', 'High', 1, 1, 1, 0, 0, 0, 'Loose', 10, 'Irritable', 'Intense', 'Bloated', 'Strong', '2026-01-04 02:50:56', 0, 0, 0, NULL),
@@ -98,9 +115,24 @@ INSERT INTO `daily_checkins` (`id`, `user_id`, `checkin_date`, `sleep_hours`, `s
 (58, 20, '2026-01-04', 3, 'Poor', 'Low', 'Normal', 'Low', 1, 0, 0, 0, 0, 0, 'Loose', 2, 'Irritable', 'Moderate', 'Heavy', 'Normal', '2026-01-04 14:17:22', 0, 0, 0, NULL),
 (59, 15, '2026-01-05', 10, 'Good', 'Medium', 'High', 'Low', 0, 0, 0, 1, 1, 0, '', 6, 'Low', 'Light', 'Normal', 'Strong', '2026-01-05 00:19:54', 0, 0, 0, NULL),
 (62, 17, '2026-01-05', 7, 'Good', 'High', 'High', 'Normal', 0, 1, 0, 0, 1, 0, 'Loose', 6, 'Irritable', 'Intense', 'Heavy', 'Strong', '2026-01-05 04:27:59', 0, 0, 0, NULL),
-(75, 15, '2026-01-06', 7, 'Poor', 'High', 'High', 'High', 1, 0, 1, 0, 0, 0, 'Loose', 5, 'Low', 'Intense', 'Bloated', 'Strong', '2026-01-06 00:59:34', 0, 0, 0, NULL),
 (77, 17, '2026-01-06', 7, 'Poor', 'High', 'Normal', 'Low', 1, 0, 1, 0, 1, 1, '', 8, 'Low', 'Moderate', 'Bloated', 'Normal', '2026-01-06 01:05:07', 0, 0, 0, NULL),
-(84, 1, '0000-00-00', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-01-06 02:43:02', 0, 0, 0, NULL);
+(133, 15, '2026-01-18', 7, 'Good', 'Low', 'Normal', 'Normal', 0, 0, 0, 0, 0, 0, 'Regular', 3, 'Calm', 'Moderate', 'Normal', 'Normal', '2026-01-18 11:42:43', 0, 0, 0, NULL),
+(135, 15, '2026-01-19', 3, 'Poor', 'High', 'Low', 'Low', 1, 1, 0, 0, 0, 0, 'Regular', 7, 'Irritable', 'None', 'Bloated', 'Strong', '2026-01-19 04:20:10', 0, 0, 0, NULL),
+(139, 15, '2026-01-13', 6, NULL, 'Medium', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-13 04:30:00', 0, 0, 0, NULL),
+(140, 15, '2026-01-14', 8, NULL, 'Medium', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-14 04:30:00', 0, 0, 0, NULL),
+(141, 15, '2026-01-15', 5, NULL, 'Medium', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-15 04:30:00', 0, 0, 0, NULL),
+(142, 15, '2026-01-16', 7, NULL, 'Medium', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-16 04:30:00', 0, 0, 0, NULL),
+(143, 15, '2026-01-17', 6, NULL, 'Medium', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-17 04:30:00', 0, 0, 0, NULL),
+(144, 15, '2026-01-06', 7, NULL, 'Low', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-06 04:30:00', 0, 0, 0, NULL),
+(145, 15, '2026-01-07', 6, NULL, 'Low', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-07 04:30:00', 0, 0, 0, NULL),
+(146, 15, '2026-01-08', 8, NULL, 'Low', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-08 04:30:00', 0, 0, 0, NULL),
+(147, 15, '2026-01-09', 7, NULL, 'Low', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-09 04:30:00', 0, 0, 0, NULL),
+(148, 15, '2026-01-10', 6, NULL, 'Low', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-10 04:30:00', 0, 0, 0, NULL),
+(149, 15, '2026-01-11', 8, NULL, 'Low', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-11 04:30:00', 0, 0, 0, NULL),
+(150, 15, '2026-01-12', 7, NULL, 'Low', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-12 04:30:00', 0, 0, 0, NULL),
+(152, 15, '2026-01-21', 7, 'Good', 'Medium', 'High', 'Normal', 0, 0, 0, 0, 0, 1, 'Regular', 5, 'Calm', 'Light', 'Heavy', 'Strong', '2026-01-21 05:37:03', 0, 0, 0, NULL),
+(153, 22, '2026-01-21', 6, 'Moderate', 'High', 'Low', 'Low', 0, 1, 0, 0, 0, 0, 'Regular', 2, 'Low', 'Light', 'Normal', 'Normal', '2026-01-21 14:45:43', 0, 0, 0, NULL),
+(155, 22, '2026-01-22', 7, 'Moderate', 'High', 'Low', 'Low', 1, 0, 1, 0, 0, 0, 'Regular', 7, 'Calm', 'Intense', 'Bloated', 'Strong', '2026-01-22 01:50:42', 0, 0, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -124,7 +156,8 @@ CREATE TABLE `dosha_scores` (
 --
 
 INSERT INTO `dosha_scores` (`score_id`, `user_id`, `checkin_date`, `vata_score`, `pitta_score`, `kapha_score`, `dominant_dosha`, `body_balance_score`) VALUES
-(1, 15, '2026-01-03', 20, 70, 60, 'Pitta', NULL),
+(1, 15, '2026-01-03', 0, 70, 40, 'Pitta', NULL),
+(2, 15, '2026-01-20', 40, 35, 65, 'Kapha', NULL),
 (10, 15, '2026-01-04', 70, 105, 40, 'Pitta', NULL),
 (12, 16, '2026-01-04', 60, 70, 70, 'Pitta', NULL),
 (13, 17, '2026-01-04', 45, 105, 30, 'Pitta', NULL),
@@ -133,7 +166,23 @@ INSERT INTO `dosha_scores` (`score_id`, `user_id`, `checkin_date`, `vata_score`,
 (18, 17, '2026-01-05', 35, 110, 55, 'Pitta', NULL),
 (31, 15, '2026-01-06', 110, 70, 50, 'Vata', NULL),
 (33, 17, '2026-01-06', 95, 25, 75, 'Vata', NULL),
-(40, 1, '2026-01-06', 80, 50, 20, NULL, NULL);
+(40, 1, '2026-01-06', 80, 50, 20, NULL, NULL),
+(44, 15, '2026-01-07', 35, 40, 25, 'Pitta', 80),
+(45, 15, '2026-01-08', 40, 35, 25, 'Vata', 75),
+(46, 15, '2026-01-09', 30, 45, 25, 'Pitta', 85),
+(47, 15, '2026-01-10', 35, 35, 30, 'Vata', 80),
+(48, 15, '2026-01-11', 50, 25, 25, 'Vata', 60),
+(49, 15, '2026-01-12', 40, 35, 25, 'Vata', 70),
+(50, 15, '2026-01-13', 35, 40, 25, 'Pitta', 82),
+(51, 15, '2026-01-14', 30, 40, 30, 'Pitta', 88),
+(52, 15, '2026-01-15', 35, 35, 30, 'Vata', 78),
+(53, 15, '2026-01-16', 45, 25, 30, 'Vata', 65),
+(54, 15, '2026-01-17', 35, 40, 25, 'Pitta', 80),
+(65, 15, '2026-01-18', 0, 10, 20, 'Kapha', NULL),
+(67, 15, '2026-01-19', 95, 55, 50, 'Vata', NULL),
+(69, 15, '2026-01-21', 0, 70, 50, 'Pitta', NULL),
+(70, 22, '2026-01-21', 20, 40, 55, 'Kapha', NULL),
+(72, 22, '2026-01-22', 75, 50, 55, 'Vata', NULL);
 
 -- --------------------------------------------------------
 
@@ -197,13 +246,13 @@ INSERT INTO `herbs` (`id`, `dosha`, `name`, `description`, `benefits`, `usage_do
 (34, 'Kapha', 'Tulsi (Holy Basil)', 'Supports respiratory health and immunity.', NULL, NULL, NULL, NULL, NULL, 'tulsi.jpg', 'immunity,respiratory', '2026-01-05 00:58:55'),
 (35, 'Kapha', 'Cinnamon', 'Improves circulation and blood sugar.', NULL, NULL, NULL, NULL, NULL, 'cinnamon.jpg', 'circulation,appetite', '2026-01-05 00:58:55'),
 (36, 'Kapha', 'Guggul', 'Lowers cholesterol and promotes weight loss.', 'Reduces weight and cholesterol; Clears lymphatic stasis', '500-1000mg', 'Tablet or capsule', 'Morning and evening', 'Can cause mild digestive upset.', 'guggul.jpg', 'weight,cholesterol', '2026-01-05 00:58:55'),
-(37, 'Kapha', 'Trikatu', 'Classic blend for weak digestion and cold.', 'Supreme Kapha burner; Stimulates all digestive enzymes', '250-500mg', 'With honey after food', 'After heavy meals', 'Highly pungent; avoid in high Pitta.', 'trickatu.jpg', 'digestion,metabolism', '2026-01-05 00:58:55'),
+(37, 'Kapha', 'Trikatu', 'Classic blend for weak digestion and cold.', 'Supreme Kapha burner; Stimulates all digestive enzymes', '250-500mg', 'With honey after food', 'After heavy meals', 'Highly pungent; avoid in high Pitta.', 'Trikatu.jpg', 'digestion,metabolism', '2026-01-05 00:58:55'),
 (38, 'Kapha', 'Pippali', 'Rejuvenative for lungs and breathing.', 'Strong respiratory tonic; Boosts metabolic fire; Clears deep toxins', '250-500mg powder', 'Take with honey', 'Early morning', 'Avoid in high pitta or pregnancy.', 'pippali.jpg', 'respiratory,immunity', '2026-01-05 00:58:55'),
 (39, 'Kapha', 'Chitrak', 'Powerful digestive fire igniter.', 'Ignites internal fire; Removes stagnation; Aids weight loss', '250mg', 'Capsule or with honey', 'Before lunch', 'Toxic in large amounts; professional advice only.', 'chitrak.jpg', 'digestion,metabolism', '2026-01-05 00:58:55'),
 (40, 'Kapha', 'Triphala', 'Good for gentle detox (good for all).', 'Gently detoxifies the colon; Regulates elimination; Balances all three doshas', '1/2 to 1 tsp powder', 'Mix in warm water', 'Before bedtime', 'Reduce dose if loose stools occur.', 'triphala.jpg', 'detox,digestion', '2026-01-05 00:58:55'),
 (41, 'Kapha', 'Punarnava', 'Kidney support and reduces water retention.', 'Diuretic; Reduces water retention; Kidneys support', '500mg-1g', 'Tea or powder with water', 'Morning', 'Avoid during pregnancy.', 'punarnava.jpg', 'water_retention,kidney', '2026-01-05 00:58:55'),
 (42, 'Kapha', 'Bibhitaki', 'Clears congestion from throat and lungs.', 'Clears throat and lungs; Respiratory rejuvenative', '1-3g powder', 'Mixed with honey', 'After breakfast', 'None.', 'bibhitaki.jpg', 'congestion,throat', '2026-01-05 00:58:55'),
-(43, 'Kapha', 'Mustard Seeds', 'Heating and stimulating.', 'Strong warming spice; Clear cold from blood; Stimulating', 'As needed in food', 'Culinary use', 'During meals', 'Avoid in skin ulcers.', 'mustard.jpg', 'heat,digestion', '2026-01-05 00:58:55'),
+(43, 'Kapha', 'Mustard Seeds', 'Heating and stimulating.', 'Strong warming spice; Clear cold from blood; Stimulating', 'As needed in food', 'Culinary use', 'During meals', 'Avoid in skin ulcers.', 'Mustard Seeds.jpg', 'heat,digestion', '2026-01-05 00:58:55'),
 (44, 'Kapha', 'Garlic', 'Strong immunity booster and heart health.', 'Natural antibiotic; Heart protector; Burns toxic Kapha', '1-2 cloves', 'Crushed or in food', 'Morning', 'Avoid if on blood thinners.', 'garlic.jpg', 'immunity,heart', '2026-01-05 00:58:55'),
 (45, 'Kapha', 'Fenugreek', 'Balance blood sugar and congestion.', 'Balances blood sugar; Clears skin; Reduces stagnation', '1 tsp seeds soaked', 'Soaked seeds or tea', 'Empty stomach morning', 'Slightly heating for Pitta.', 'fenugreek.jpg', 'diabetes,digestion', '2026-01-05 00:58:55');
 
@@ -397,6 +446,7 @@ INSERT INTO `recommendations` (`id`, `dosha`, `category`, `content`, `created_at
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(100) DEFAULT NULL,
+  `phone` varchar(15) DEFAULT NULL,
   `email` varchar(100) NOT NULL,
   `password_hash` varchar(255) NOT NULL,
   `is_verified` tinyint(4) DEFAULT 0,
@@ -413,18 +463,17 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `password_hash`, `is_verified`, `reset_otp`, `reset_otp_expires`, `created_at`, `api_token`, `reset_token`, `checkin_streak`, `last_checkin_date`) VALUES
-(5, 'Sai Mani', 'saimaniesward@gmail.com', '$2y$10$Jr9zSTFWQ1bE86wLi9ieh..Alz7f3.RWsj1mtGJlRzl4puA2qj8cy', 1, '365169', '2026-01-02 17:02:21', '2025-12-27 03:27:27', NULL, NULL, 0, NULL),
-(9, 'eswar', 'saimanieswardutta8@gmail.com', '$2y$10$CcXMZsQIjeZvS6D5R.9Y2.kqKweAfEJxGoNLAeTdSQjEWgs7UfBpq', 0, '162406', '2026-01-02 17:15:34', '2026-01-02 16:05:34', NULL, NULL, 0, NULL),
-(11, 'eswar', 'rohithnaidu269@gmail.com', '$2y$10$2yhphrylkR/qsG45bEVlQuJBsdy1YJdUYymqynm7vVyucSDknaLwe', 0, '293863', '2026-01-02 17:17:48', '2026-01-02 16:07:49', NULL, NULL, 0, NULL),
-(12, 'gwyw', 'eswar@gmail.com', '$2y$10$t8jq2tLfcRYNvSXpvawuNuWzHOz/IPy1DXLWNFRu14zqtDRfAiudi', 0, '602368', '2026-01-02 17:32:35', '2026-01-02 16:22:35', NULL, NULL, 0, NULL),
-(13, 'eswar', 'esw1ar@gmail.com', '$2y$10$yGA2akdSYLPhjFRbGAw6/.KAQp.ScONoNzaF5xZiCL/7FjTlrVoVK', 0, '906493', '2026-01-02 17:36:40', '2026-01-02 16:26:40', NULL, NULL, 0, NULL),
-(14, 'sai manieswar', 'duttasaimanieswar@gmail.com', '$2y$10$YwGJGe6hRHjssZ2jRTMThuDWR4aV4RbwkWcKPYr098.eYIf9bAHTu', 0, NULL, NULL, '2026-01-02 16:47:58', NULL, NULL, 0, NULL),
-(15, 'Sai', 'e02697113@gmail.com', '$2y$10$5VQ60L9iTHZpwBro5uSFU.b7DJCqsdEvNlzz3JlcRIkrv72SSlDFi', 1, NULL, NULL, '2026-01-03 01:47:55', 'f33f97b4111597d5ba62f04d050d504f53c93209fca451c75e5ec98d00ef5bcc', NULL, 5, '2026-01-06'),
-(16, 'Gnaneswar', 'v.gnaneswarreddy18@gmail.com', '$2y$10$F2UYOczl0klFD8dsW/a1Fe65OlfEN/kF587Fgdcm4SCmOGNevNo2K', 1, NULL, NULL, '2026-01-04 03:46:54', 'a8ab90a816fb9962599266b1671019e672a6dbb96bd6bd50517d5aa7681db5ff', NULL, 0, NULL),
-(17, 'siva', 'ysivaprasad0273@gmail.com', '$2y$10$SZy2SJ2Kr8mEq8Fe2Ck7iOkZTh5/rKfKh/7SKpdRJpSYbdcvvr7B.', 1, NULL, NULL, '2026-01-04 04:36:52', '190f952d742c890d5c4b51b550c8b43557e0107196fd752c6a5a3d320c82fc01', NULL, 4, '2026-01-06'),
-(18, 'siva', 'sunnymeghana43@gmail.com', '$2y$10$hTnEIWkYi6/et9GJ5y5F5.swfdH4z4oUQ4xj4nPuSz7X.hMFo0OLe', 0, '347408', '2026-01-04 15:23:16', '2026-01-04 14:13:16', NULL, NULL, 2, '2026-01-04'),
-(20, 'malli kharjuna', 'chevvumallikarjuna11@gmail.com', '$2y$10$zwoa1ktXrF36gh741.Hh4eNOvh0p5M/HE36hBHvjBKeRVWO1i3wSK', 1, NULL, NULL, '2026-01-04 14:14:49', '13934f5cf47c51a7e040961421dc6a26645fe711e1f4bbec4634b38f14982ec5', NULL, 0, NULL);
+INSERT INTO `users` (`id`, `name`, `phone`, `email`, `password_hash`, `is_verified`, `reset_otp`, `reset_otp_expires`, `created_at`, `api_token`, `reset_token`, `checkin_streak`, `last_checkin_date`) VALUES
+(9, 'eswar', NULL, 'saimanieswardutta8@gmail.com', '$2y$10$CcXMZsQIjeZvS6D5R.9Y2.kqKweAfEJxGoNLAeTdSQjEWgs7UfBpq', 0, '162406', '2026-01-02 17:15:34', '2026-01-02 16:05:34', NULL, NULL, 0, NULL),
+(11, 'eswar', NULL, 'rohithnaidu269@gmail.com', '$2y$10$2yhphrylkR/qsG45bEVlQuJBsdy1YJdUYymqynm7vVyucSDknaLwe', 0, '293863', '2026-01-02 17:17:48', '2026-01-02 16:07:49', NULL, NULL, 0, NULL),
+(12, 'gwyw', NULL, 'eswar@gmail.com', '$2y$10$t8jq2tLfcRYNvSXpvawuNuWzHOz/IPy1DXLWNFRu14zqtDRfAiudi', 0, '602368', '2026-01-02 17:32:35', '2026-01-02 16:22:35', NULL, NULL, 0, NULL),
+(13, 'eswar', NULL, 'esw1ar@gmail.com', '$2y$10$yGA2akdSYLPhjFRbGAw6/.KAQp.ScONoNzaF5xZiCL/7FjTlrVoVK', 0, '906493', '2026-01-02 17:36:40', '2026-01-02 16:26:40', NULL, NULL, 0, NULL),
+(14, 'sai manieswar', NULL, 'duttasaimanieswar@gmail.com', '$2y$10$YwGJGe6hRHjssZ2jRTMThuDWR4aV4RbwkWcKPYr098.eYIf9bAHTu', 0, NULL, NULL, '2026-01-02 16:47:58', NULL, NULL, 0, NULL),
+(15, 'Sai', NULL, 'e02697113@gmail.com', '$2y$10$5VQ60L9iTHZpwBro5uSFU.b7DJCqsdEvNlzz3JlcRIkrv72SSlDFi', 1, NULL, NULL, '2026-01-03 01:47:55', '0fb354ebf7c692ec4fe566c946190b9d2e11ec35ec63cbd7d4e7755ae2854319', NULL, 19, '2026-01-21'),
+(16, 'Gnaneswar', NULL, 'v.gnaneswarreddy18@gmail.com', '$2y$10$F2UYOczl0klFD8dsW/a1Fe65OlfEN/kF587Fgdcm4SCmOGNevNo2K', 1, NULL, NULL, '2026-01-04 03:46:54', 'a8ab90a816fb9962599266b1671019e672a6dbb96bd6bd50517d5aa7681db5ff', NULL, 0, NULL),
+(17, 'siva', NULL, 'ysivaprasad0273@gmail.com', '$2y$10$SZy2SJ2Kr8mEq8Fe2Ck7iOkZTh5/rKfKh/7SKpdRJpSYbdcvvr7B.', 1, NULL, NULL, '2026-01-04 04:36:52', '190f952d742c890d5c4b51b550c8b43557e0107196fd752c6a5a3d320c82fc01', NULL, 4, '2026-01-06'),
+(20, 'malli kharjuna', NULL, 'chevvumallikarjuna11@gmail.com', '$2y$10$zwoa1ktXrF36gh741.Hh4eNOvh0p5M/HE36hBHvjBKeRVWO1i3wSK', 1, NULL, NULL, '2026-01-04 14:14:49', '13934f5cf47c51a7e040961421dc6a26645fe711e1f4bbec4634b38f14982ec5', NULL, 0, NULL),
+(22, 'User', '9573507649', 'aravachandu208@gmail.com', '$2y$10$f0XNoyhQz5x2MsrxI5u2O.KYHWIKCSNkDjEhPqum4ZSFiSWSaV78C', 1, NULL, NULL, '2026-01-21 14:43:30', '313f96abb2a9b4b2a904b74375e63dea3535af827a8e4b74c9b6eb6f144e01c4', NULL, 2, '2026-01-22');
 
 -- --------------------------------------------------------
 
@@ -449,7 +498,8 @@ CREATE TABLE `user_profiles` (
 --
 
 INSERT INTO `user_profiles` (`id`, `user_id`, `full_name`, `phone`, `gender`, `dob`, `country`, `profile_photo`, `updated_at`) VALUES
-(1, 15, 'Sai', '9573507346', 'Male', '2004-06-26', 'India', 'http://10.154.63.223/ayurpredict/uploads/profiles/15_1767603611.jpg', '2026-01-05 09:23:08');
+(1, 15, 'Sai', '9573507346', 'Male', '2004-06-26', 'India', 'http://10.65.241.223/ayurpredict/uploads/profiles/15_1768973861.jpg', '2026-01-21 05:37:41'),
+(3, 22, 'User', '', '', '0000-00-00', '', 'http://10.65.241.223/ayurpredict/uploads/profiles/22_1769008372.jpg', '2026-01-21 15:12:52');
 
 --
 -- Indexes for dumped tables
@@ -518,19 +568,19 @@ ALTER TABLE `user_profiles`
 -- AUTO_INCREMENT for table `body_balance_scores`
 --
 ALTER TABLE `body_balance_scores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- AUTO_INCREMENT for table `daily_checkins`
 --
 ALTER TABLE `daily_checkins`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=156;
 
 --
 -- AUTO_INCREMENT for table `dosha_scores`
 --
 ALTER TABLE `dosha_scores`
-  MODIFY `score_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `score_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
 -- AUTO_INCREMENT for table `herbs`
@@ -554,13 +604,13 @@ ALTER TABLE `recommendations`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `user_profiles`
 --
 ALTER TABLE `user_profiles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables

@@ -1356,6 +1356,102 @@
             "responses": [
                 "Lion’s Breath (Simhasana) releases tension. BENEFITS: Clears mucus and stagnation from throat. HOW TO: Inhale deep. Exhale forcefully with mouth wide open, tongue sticking out, making a 'Haaaa' sound. Gaze up."
             ]
+        },
+        {
+            "tag": "pose_headstand",
+            "patterns": [
+                "How to do Headstand?",
+                "Sirsasana benefits",
+                "King of asanas",
+                "Inversions for Kapha"
+            ],
+            "responses": [
+                "Headstand (Sirsasana) is the 'King of Asanas'. BENEFITS: Increases blood flow to the brain and stimulates the pituitary pineal glands. Good for Kapha focus. HOW TO: Advanced pose; support weight on forearms, not head/neck. Lift legs smooth and straight."
+            ]
+        },
+        {
+            "tag": "pose_reverse_warrior",
+            "patterns": [
+                "How to do Reverse Warrior?",
+                "Viparita Virabhadrasana benefits",
+                "Side stretch warrior",
+                "Yoga flow for Kapha"
+            ],
+            "responses": [
+                "Reverse Warrior opens the side body. BENEFITS: increases flexibility in the spine and opens the chest. HOW TO: From Warrior II, flip front palm and reach it up and back. Keep front knee bent and back leg straight."
+            ]
+        },
+        {
+            "tag": "pose_side_plank",
+            "patterns": [
+                "How to do Side Plank?",
+                "Vasisthasana benefits",
+                "Core strengthing side",
+                "Arm balance yoga"
+            ],
+            "responses": [
+                "Side Plank (Vasisthasana) builds wrist and core strength. BENEFITS: Tones all oblique muscles and builds Kapha heat/focus. HOW TO: From Plank, shift weight to one hand and outer edge of foot. Stack feet and lift other arm up."
+            ]
+        },
+        {
+            "tag": "pose_crow",
+            "patterns": [
+                "How to do Crow Pose?",
+                "Bakasana benefits",
+                "Arm balance for focus",
+                "Yoga for coordination"
+            ],
+            "responses": [
+                "Crow Pose (Bakasana) requires focus and strength. BENEFITS: Strengthens wrists and abs; increases mental concentration. HOW TO: Squat down, place hands flat. Knees to armpits. Lean forward until feet float off floor."
+            ]
+        },
+        {
+            "tag": "pose_half_lord_fishes",
+            "patterns": [
+                "How to do Half Lord of the Fishes?",
+                "Ardha Matsyendrasana benefits",
+                "Seated twist yoga",
+                "Yoga for digestion pitta"
+            ],
+            "responses": [
+                "Half Lord of the Fishes is a deep seated twist. BENEFITS: Massages digestive organs and detoxifies the liver (Pitta). HOW TO: Sit with legs crossed. Step one foot over the opposite knee. Twist towards the bent leg."
+            ]
+        },
+        {
+            "tag": "pose_cat_cow",
+            "patterns": [
+                "How to do Cat Cow?",
+                "Marjaryasana Bitilasana benefits",
+                "Spinal warmup yoga",
+                "Gentle backbend vata"
+            ],
+            "responses": [
+                "Cat-Cow Stretch is a gentle spinal flow. BENEFITS: Lubricates the spine and calms Vata. HOW TO: On hands and knees. Inhale, drop belly, look up (Cow). Exhale, round back, tuck chin (Cat)."
+            ]
+        },
+        {
+            "tag": "pose_sphinx",
+            "patterns": [
+                "How to do Sphinx Pose?",
+                "Salamba Bhujangasana benefits",
+                "Gentle backbend",
+                "Yoga for lower back vata"
+            ],
+            "responses": [
+                "Sphinx Pose is a gentle alternative to Cobra. BENEFITS: Strengthening the spine without over-stimulation (Good for Vata). HOW TO: Lie on stomach. Prop yourself up on forearms, elbows under shoulders. Look forward gently."
+            ]
+        },
+        {
+            "tag": "practice_root_lock",
+            "patterns": [
+                "How to do Root Lock?",
+                "Mula Bandha benefits",
+                "Pelvic floor yoga",
+                "Grounding energy lock"
+            ],
+            "responses": [
+                "Root Lock (Mula Bandha) is an energy seal. BENEFITS: Contains Vata energy and prevents leakage of vitality. HOW TO: Gently engage and lift the pelvic floor muscles (perineum) while breathing. Release slowly."
+            ]
         }
     ]
 }

@@ -11,9 +11,13 @@ if (!$user_id) {
     echo json_encode(["status" => "error", "message" => "User ID required"]);
     exit;
 }
-$imbalance = abs($vata - 50) + abs($pitta - 50) + abs($kapha - 50);
-$score = 100 - $imbalance;
-if ($score < 0) $score = 0;
+// Match logic with save_daily_checkin.php
+// Formula: 100 - (Total Imbalance / 3)
+$total_imbalance = $vata + $pitta + $kapha;
+$score = 100 - ($total_imbalance / 3);
+
+// Clamp
+if ($score < 10) $score = 10;
 if ($score > 100) $score = 100;
 $stmt = $conn->prepare("INSERT INTO body_balance_scores (user_id, checkin_date, score) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE score=VALUES(score)");
 $stmt->bind_param("isi", $user_id, $checkin_date, $score);

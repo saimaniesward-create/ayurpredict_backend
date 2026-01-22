@@ -18,9 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     
     $checkin_result = $conn->query($checkin_sql);
     $data_map = []; // Map date -> data
+    
+    // DEBUG: Log result count
+    // echo "DEBUG: Query: $checkin_sql <br>Rows: " . $checkin_result->num_rows . "<br>";
+    
     if ($checkin_result->num_rows > 0) {
         while ($row = $checkin_result->fetch_assoc()) {
             $date = $row['date'];
+            // echo "Found Date: $date <br>";
             
             // Map Stress Text to Number for Graph
             $stress_val = $row['stress_level'];

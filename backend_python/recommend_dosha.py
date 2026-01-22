@@ -148,7 +148,7 @@ def get_recommendations(user_id):
         final_herbs = []
         categories = ['food', 'yoga', 'lifestyle']
         # base_image_url = "http://10.0.2.2/ayurpredict/images/herbs/" # Android Emulator
-        base_image_url = "http://172.17.22.223/ayurpredict/images/herbs/" # User's Real IP
+        base_image_url = "http://10.65.241.223/ayurpredict/images/herbs/" # User's Real IP
 
         for target in targets:
             d_name = target['dosha']

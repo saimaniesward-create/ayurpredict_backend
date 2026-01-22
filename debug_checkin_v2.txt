@@ -1,0 +1,25 @@
+---- Checkin at 2026-01-21 06:37:03 ----
+Input: Array
+(
+    [appetite] => Strong
+    [body_dryness] => 0
+    [body_heat] => 0
+    [body_heaviness] => 0
+    [cold_body] => 0
+    [digestion] => Heavy
+    [elimination] => Regular
+    [evening_energy] => Normal
+    [hydration_level] => 5
+    [mood] => Calm
+    [morning_energy] => High
+    [physical_activity] => Light
+    [sleep_hours] => 7
+    [sleep_quality] => Good
+    [spicy_craving] => 1
+    [stress_level] => Medium
+    [sweet_craving] => 0
+    [user_id] => 15
+)
+
+Saved Score: 60
+Calculated: V=0 P=70 K=50 Imbalance=120 Score=60

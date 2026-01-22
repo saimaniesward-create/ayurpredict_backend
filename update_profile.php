@@ -28,7 +28,7 @@ if (isset($_FILES['profile_photo'])) {
     $target_file = $target_dir . $new_filename;
     
     if (move_uploaded_file($_FILES["profile_photo"]["tmp_name"], $target_file)) {
-        $photo_path = "http://172.17.22.223/ayurpredict/" . $target_file;
+        $photo_path = "http://10.65.241.223/ayurpredict/" . $target_file;
     }
 }
 // UPDATE user_profiles table (Insert if not exists)
