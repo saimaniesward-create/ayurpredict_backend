@@ -793,6 +793,19 @@
             ]
         },
         {
+            "tag": "checkin_bloated",
+            "patterns": [
+                "What does bloated mean?",
+                "Meaning of bloated",
+                "I feel bloated definition",
+                "Explain bloating in Ayurveda",
+                "Why am I bloated?"
+            ],
+            "responses": [
+                "Bloated means feeling full, tight, or swollen in the abdomen, often due to gas or trapped air. In Ayurveda, this is a sign of high Vata dosha (too much air/ether) and weak digestive fire (Agni). Sipping warm ginger water or chewing fennel seeds can help relieve it."
+            ]
+        },
+        {
             "tag": "checkin_sweet",
             "patterns": [
                 "Why do I crave sweet food?",

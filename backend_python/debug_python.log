@@ -34,3 +34,171 @@
 [2026-01-21 11:08:19.951088] Fetched 4 lifestyle items for Vata
 [2026-01-21 11:08:19.952252] Fetched 4 herbs for Vata
 [2026-01-21 11:08:19.952980] Success. Returning JSON (Legacy Format).
+[2026-01-21 20:16:05.504229] --- Script Started ---
+[2026-01-21 20:16:05.646760] MySQL Connector imported successfully.
+[2026-01-21 20:16:05.647123] Processing for User ID: 22
+[2026-01-21 20:16:05.717878] Database connected successfully.
+[2026-01-21 20:16:05.719940] Scores Found: Vata=20, Pitta=40, Kapha=55
+[2026-01-21 20:16:05.720765] Fallback Dominant: Kapha
+[2026-01-21 20:16:05.721651] Logic Check: DomScore=55, DepletedScore=20
+[2026-01-21 20:16:05.722464] Condition: Balanced (<=60)
+[2026-01-21 20:16:05.727646] Fetched 10 food items for Kapha
+[2026-01-21 20:16:05.729205] Fetched 10 yoga items for Kapha
+[2026-01-21 20:16:05.730714] Fetched 10 lifestyle items for Kapha
+[2026-01-21 20:16:05.735137] Fetched 10 herbs for Kapha
+[2026-01-21 20:16:05.735926] Success. Returning JSON (Legacy Format).
+[2026-01-21 20:40:16.344167] --- Script Started ---
+[2026-01-21 20:40:16.470556] MySQL Connector imported successfully.
+[2026-01-21 20:40:16.470909] Processing for User ID: 15
+[2026-01-21 20:40:16.519192] Database connected successfully.
+[2026-01-21 20:40:16.520202] Scores Found: Vata=0, Pitta=70, Kapha=50
+[2026-01-21 20:40:16.520511] Fallback Dominant: Pitta
+[2026-01-21 20:40:16.520797] Logic Check: DomScore=70, DepletedScore=0
+[2026-01-21 20:40:16.521061] Condition: High Imbalance (>60)
+[2026-01-21 20:40:16.521346] Condition: Adding Depleted Support (<=30)
+[2026-01-21 20:40:16.522098] Fetched 8 food items for Pitta
+[2026-01-21 20:40:16.522751] Fetched 8 yoga items for Pitta
+[2026-01-21 20:40:16.523279] Fetched 8 lifestyle items for Pitta
+[2026-01-21 20:40:16.523801] Fetched 8 herbs for Pitta
+[2026-01-21 20:40:16.524341] Fetched 4 food items for Vata
+[2026-01-21 20:40:16.525017] Fetched 4 yoga items for Vata
+[2026-01-21 20:40:16.525679] Fetched 4 lifestyle items for Vata
+[2026-01-21 20:40:16.526292] Fetched 4 herbs for Vata
+[2026-01-21 20:40:16.526610] Success. Returning JSON (Legacy Format).
+[2026-01-21 20:41:22.431690] --- Script Started ---
+[2026-01-21 20:41:22.559419] MySQL Connector imported successfully.
+[2026-01-21 20:41:22.559797] Processing for User ID: 15
+[2026-01-21 20:41:22.611707] Database connected successfully.
+[2026-01-21 20:41:22.613328] Scores Found: Vata=0, Pitta=70, Kapha=50
+[2026-01-21 20:41:22.613898] Fallback Dominant: Pitta
+[2026-01-21 20:41:22.614446] Logic Check: DomScore=70, DepletedScore=0
+[2026-01-21 20:41:22.615105] Condition: High Imbalance (>60)
+[2026-01-21 20:41:22.615576] Condition: Adding Depleted Support (<=30)
+[2026-01-21 20:41:22.616622] Fetched 8 food items for Pitta
+[2026-01-21 20:41:22.618167] Fetched 8 yoga items for Pitta
+[2026-01-21 20:41:22.618928] Fetched 8 lifestyle items for Pitta
+[2026-01-21 20:41:22.620059] Fetched 8 herbs for Pitta
+[2026-01-21 20:41:22.620763] Fetched 4 food items for Vata
+[2026-01-21 20:41:22.621465] Fetched 4 yoga items for Vata
+[2026-01-21 20:41:22.622188] Fetched 4 lifestyle items for Vata
+[2026-01-21 20:41:22.622885] Fetched 4 herbs for Vata
+[2026-01-21 20:41:22.623240] Success. Returning JSON (Legacy Format).
+[2026-01-21 20:41:46.345846] --- Script Started ---
+[2026-01-21 20:41:46.462463] MySQL Connector imported successfully.
+[2026-01-21 20:41:46.462864] Processing for User ID: 22
+[2026-01-21 20:41:46.514985] Database connected successfully.
+[2026-01-21 20:41:46.516005] Scores Found: Vata=20, Pitta=40, Kapha=55
+[2026-01-21 20:41:46.516617] Fallback Dominant: Kapha
+[2026-01-21 20:41:46.516851] Logic Check: DomScore=55, DepletedScore=20
+[2026-01-21 20:41:46.517053] Condition: Balanced (<=60)
+[2026-01-21 20:41:46.518191] Fetched 10 food items for Kapha
+[2026-01-21 20:41:46.519054] Fetched 10 yoga items for Kapha
+[2026-01-21 20:41:46.519744] Fetched 10 lifestyle items for Kapha
+[2026-01-21 20:41:46.520523] Fetched 10 herbs for Kapha
+[2026-01-21 20:41:46.520847] Success. Returning JSON (Legacy Format).
+[2026-01-21 21:15:58.718387] --- Script Started ---
+[2026-01-21 21:15:58.846673] MySQL Connector imported successfully.
+[2026-01-21 21:15:58.847016] Processing for User ID: 5
+[2026-01-21 21:15:58.912116] Database connected successfully.
+[2026-01-21 21:15:58.913966] Scores Found: Vata=105, Pitta=75, Kapha=35
+[2026-01-21 21:15:58.914656] Fallback Dominant: Vata
+[2026-01-21 21:15:58.915342] Logic Check: DomScore=105, DepletedScore=35
+[2026-01-21 21:15:58.916100] Condition: High Imbalance (>60)
+[2026-01-21 21:15:58.917258] Fetched 8 food items for Vata
+[2026-01-21 21:15:58.918347] Fetched 8 yoga items for Vata
+[2026-01-21 21:15:58.919494] Fetched 8 lifestyle items for Vata
+[2026-01-21 21:15:58.920653] Fetched 8 herbs for Vata
+[2026-01-21 21:15:58.921192] Success. Returning JSON (Legacy Format).
+[2026-01-24 22:26:40.826379] --- Script Started ---
+[2026-01-24 22:26:41.192558] MySQL Connector imported successfully.
+[2026-01-24 22:26:41.193781] Processing for User ID: 15
+[2026-01-24 22:26:41.337629] Database connected successfully.
+[2026-01-24 22:26:41.340547] Scores Found: Vata=65, Pitta=75, Kapha=50
+[2026-01-24 22:26:41.341639] Fallback Dominant: Pitta
+[2026-01-24 22:26:41.342595] Logic Check: DomScore=75, DepletedScore=50
+[2026-01-24 22:26:41.343536] Condition: High Imbalance (>60)
+[2026-01-24 22:26:41.345859] Fetched 8 food items for Pitta
+[2026-01-24 22:26:41.347878] Fetched 8 yoga items for Pitta
+[2026-01-24 22:26:41.349922] Fetched 8 lifestyle items for Pitta
+[2026-01-24 22:26:41.352458] Fetched 8 herbs for Pitta
+[2026-01-24 22:26:41.353829] Success. Returning JSON (Legacy Format).
+[2026-01-29 15:12:01.496034] --- Script Started ---
+[2026-01-29 15:12:01.937247] MySQL Connector imported successfully.
+[2026-01-29 15:12:01.938677] Processing for User ID: 15
+[2026-01-29 15:12:02.115356] Database connected successfully.
+[2026-01-29 15:12:02.118509] Scores Found: Vata=15, Pitta=35, Kapha=65
+[2026-01-29 15:12:02.119781] Fallback Dominant: Kapha
+[2026-01-29 15:12:02.120871] Logic Check: DomScore=65, DepletedScore=15
+[2026-01-29 15:12:02.122076] Condition: High Imbalance (>60)
+[2026-01-29 15:12:02.123085] Condition: Adding Depleted Support (<=30)
+[2026-01-29 15:12:02.126099] Fetched 8 food items for Kapha
+[2026-01-29 15:12:02.129097] Fetched 8 yoga items for Kapha
+[2026-01-29 15:12:02.131731] Fetched 8 lifestyle items for Kapha
+[2026-01-29 15:12:02.134518] Fetched 8 herbs for Kapha
+[2026-01-29 15:12:02.136523] Fetched 4 food items for Vata
+[2026-01-29 15:12:02.138191] Fetched 4 yoga items for Vata
+[2026-01-29 15:12:02.139833] Fetched 4 lifestyle items for Vata
+[2026-01-29 15:12:02.142145] Fetched 4 herbs for Vata
+[2026-01-29 15:12:02.143415] Success. Returning JSON (Legacy Format).
+[2026-01-29 15:33:35.747412] --- Script Started ---
+[2026-01-29 15:33:36.231060] MySQL Connector imported successfully.
+[2026-01-29 15:33:36.232400] Processing for User ID: 15
+[2026-01-29 15:33:36.408821] Database connected successfully.
+[2026-01-29 15:33:36.411866] Scores Found: Vata=15, Pitta=40, Kapha=85
+[2026-01-29 15:33:36.413100] Fallback Dominant: Kapha
+[2026-01-29 15:33:36.414323] Logic Check: DomScore=85, DepletedScore=15
+[2026-01-29 15:33:36.415584] Condition: High Imbalance (>60)
+[2026-01-29 15:33:36.416852] Condition: Adding Depleted Support (<=30)
+[2026-01-29 15:33:36.420426] Fetched 8 food items for Kapha
+[2026-01-29 15:33:36.422931] Fetched 8 yoga items for Kapha
+[2026-01-29 15:33:36.425638] Fetched 8 lifestyle items for Kapha
+[2026-01-29 15:33:36.428105] Fetched 8 herbs for Kapha
+[2026-01-29 15:33:36.430585] Fetched 4 food items for Vata
+[2026-01-29 15:33:36.432888] Fetched 4 yoga items for Vata
+[2026-01-29 15:33:36.435286] Fetched 4 lifestyle items for Vata
+[2026-01-29 15:33:36.437634] Fetched 4 herbs for Vata
+[2026-01-29 15:33:36.438723] Success. Returning JSON (Legacy Format).
+[2026-01-30 17:16:53.003928] --- Script Started ---
+[2026-01-30 17:16:53.364526] MySQL Connector imported successfully.
+[2026-01-30 17:16:53.365955] Processing for User ID: 15
+[2026-01-30 17:16:53.504981] Database connected successfully.
+[2026-01-30 17:16:53.507557] Scores Found: Vata=40, Pitta=25, Kapha=90
+[2026-01-30 17:16:53.508242] Fallback Dominant: Kapha
+[2026-01-30 17:16:53.509417] Logic Check: DomScore=90, DepletedScore=25
+[2026-01-30 17:16:53.510707] Condition: High Imbalance (>60)
+[2026-01-30 17:16:53.511812] Condition: Adding Depleted Support (<=30)
+[2026-01-30 17:16:53.513998] Fetched 8 food items for Kapha
+[2026-01-30 17:16:53.516057] Fetched 8 yoga items for Kapha
+[2026-01-30 17:16:53.518068] Fetched 8 lifestyle items for Kapha
+[2026-01-30 17:16:53.520060] Fetched 8 herbs for Kapha
+[2026-01-30 17:16:53.521884] Fetched 4 food items for Pitta
+[2026-01-30 17:16:53.523646] Fetched 4 yoga items for Pitta
+[2026-01-30 17:16:53.525467] Fetched 4 lifestyle items for Pitta
+[2026-01-30 17:16:53.527306] Fetched 4 herbs for Pitta
+[2026-01-30 17:16:53.528405] Success. Returning JSON (Legacy Format).
+[2026-01-30 17:34:04.765854] --- Script Started ---
+[2026-01-30 17:34:05.143618] MySQL Connector imported successfully.
+[2026-01-30 17:34:05.144221] Processing for User ID: 15
+[2026-01-30 17:34:05.294597] Database connected successfully.
+[2026-01-30 17:34:05.297232] Scores Found: Vata=60, Pitta=40, Kapha=75
+[2026-01-30 17:34:05.298465] Fallback Dominant: Kapha
+[2026-01-30 17:34:05.299311] Logic Check: DomScore=75, DepletedScore=40
+[2026-01-30 17:34:05.300339] Condition: High Imbalance (>60)
+[2026-01-30 17:34:05.303695] Fetched 8 food items for Kapha
+[2026-01-30 17:34:05.306588] Fetched 8 yoga items for Kapha
+[2026-01-30 17:34:05.309301] Fetched 8 lifestyle items for Kapha
+[2026-01-30 17:34:05.311276] Fetched 8 herbs for Kapha
+[2026-01-30 17:34:05.312161] Success. Returning JSON (Legacy Format).
+[2026-01-30 17:39:44.265222] --- Script Started ---
+[2026-01-30 17:39:44.642699] MySQL Connector imported successfully.
+[2026-01-30 17:39:44.644051] Processing for User ID: 15
+[2026-01-30 17:39:44.795604] Database connected successfully.
+[2026-01-30 17:39:44.797756] Scores Found: Vata=40, Pitta=70, Kapha=70
+[2026-01-30 17:39:44.798833] Fallback Dominant: Pitta
+[2026-01-30 17:39:44.799984] Logic Check: DomScore=70, DepletedScore=40
+[2026-01-30 17:39:44.801014] Condition: High Imbalance (>60)
+[2026-01-30 17:39:44.802989] Fetched 8 food items for Pitta
+[2026-01-30 17:39:44.805259] Fetched 8 yoga items for Pitta
+[2026-01-30 17:39:44.807285] Fetched 8 lifestyle items for Pitta
+[2026-01-30 17:39:44.809462] Fetched 8 herbs for Pitta
+[2026-01-30 17:39:44.810699] Success. Returning JSON (Legacy Format).

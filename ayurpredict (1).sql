@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 22, 2026 at 03:28 AM
+-- Generation Time: Feb 03, 2026 at 03:18 AM
 -- Server version: 10.4.32-MariaDB-log
 -- PHP Version: 8.2.12
 
@@ -65,7 +65,12 @@ INSERT INTO `body_balance_scores` (`id`, `user_id`, `checkin_date`, `score`, `cr
 (65, 15, '2026-01-19', 33, '2026-01-19 04:20:10'),
 (69, 15, '2026-01-21', 60, '2026-01-21 05:37:03'),
 (71, 22, '2026-01-21', 61, '2026-01-21 14:45:43'),
-(75, 22, '2026-01-22', 40, '2026-01-22 01:50:42');
+(75, 22, '2026-01-22', 40, '2026-01-22 01:50:42'),
+(77, 15, '2026-01-22', 43, '2026-01-22 13:55:18'),
+(79, 15, '2026-01-24', 36, '2026-01-24 16:56:00'),
+(81, 15, '2026-01-29', 53, '2026-01-29 09:41:02'),
+(85, 15, '2026-01-30', 40, '2026-01-30 11:46:41'),
+(87, 9, '2026-01-30', 41, '2026-01-30 11:50:23');
 
 -- --------------------------------------------------------
 
@@ -132,7 +137,12 @@ INSERT INTO `daily_checkins` (`id`, `user_id`, `checkin_date`, `sleep_hours`, `s
 (150, 15, '2026-01-12', 7, NULL, 'Low', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL, NULL, NULL, NULL, '2026-01-12 04:30:00', 0, 0, 0, NULL),
 (152, 15, '2026-01-21', 7, 'Good', 'Medium', 'High', 'Normal', 0, 0, 0, 0, 0, 1, 'Regular', 5, 'Calm', 'Light', 'Heavy', 'Strong', '2026-01-21 05:37:03', 0, 0, 0, NULL),
 (153, 22, '2026-01-21', 6, 'Moderate', 'High', 'Low', 'Low', 0, 1, 0, 0, 0, 0, 'Regular', 2, 'Low', 'Light', 'Normal', 'Normal', '2026-01-21 14:45:43', 0, 0, 0, NULL),
-(155, 22, '2026-01-22', 7, 'Moderate', 'High', 'Low', 'Low', 1, 0, 1, 0, 0, 0, 'Regular', 7, 'Calm', 'Intense', 'Bloated', 'Strong', '2026-01-22 01:50:42', 0, 0, 0, NULL);
+(155, 22, '2026-01-22', 7, 'Moderate', 'High', 'Low', 'Low', 1, 0, 1, 0, 0, 0, 'Regular', 7, 'Calm', 'Intense', 'Bloated', 'Strong', '2026-01-22 01:50:42', 0, 0, 0, NULL),
+(156, 15, '2026-01-22', 7, 'Poor', 'Low', 'Normal', 'High', 1, 0, 1, 0, 0, 0, 'Regular', 5, 'Irritable', 'Light', 'Heavy', 'Strong', '2026-01-22 13:55:18', 0, 0, 0, NULL),
+(157, 15, '2026-01-24', 7, 'Poor', 'Medium', 'Low', 'High', 0, 0, 0, 1, 0, 1, 'Heavy', 8, 'Irritable', 'Moderate', 'Bloated', 'Strong', '2026-01-24 16:56:00', 0, 0, 0, NULL),
+(158, 15, '2026-01-29', 7, 'Good', 'Medium', 'Normal', 'High', 0, 0, 1, 0, 1, 0, 'Regular', 5, 'Calm', 'Light', 'Heavy', 'Strong', '2026-01-29 09:41:02', 0, 0, 0, NULL),
+(160, 15, '2026-01-30', 7, 'Moderate', 'High', 'Low', 'Normal', 0, 0, 1, 0, 1, 0, 'Loose', 5, 'Irritable', 'Light', 'Bloated', 'Strong', '2026-01-30 11:46:41', 0, 0, 0, NULL),
+(161, 9, '2026-01-30', 7, 'Moderate', 'High', 'Low', 'High', 1, 0, 1, 0, 0, 0, 'Regular', 7, 'Anxious', 'Moderate', 'Bloated', 'Strong', '2026-01-30 11:50:23', 0, 0, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -182,7 +192,12 @@ INSERT INTO `dosha_scores` (`score_id`, `user_id`, `checkin_date`, `vata_score`,
 (67, 15, '2026-01-19', 95, 55, 50, 'Vata', NULL),
 (69, 15, '2026-01-21', 0, 70, 50, 'Pitta', NULL),
 (70, 22, '2026-01-21', 20, 40, 55, 'Kapha', NULL),
-(72, 22, '2026-01-22', 75, 50, 55, 'Vata', NULL);
+(72, 22, '2026-01-22', 75, 50, 55, 'Vata', NULL),
+(73, 15, '2026-01-22', 55, 45, 70, 'Kapha', NULL),
+(74, 15, '2026-01-24', 65, 75, 50, 'Pitta', NULL),
+(75, 15, '2026-01-29', 15, 40, 85, 'Kapha', NULL),
+(77, 15, '2026-01-30', 40, 70, 70, 'Pitta', NULL),
+(78, 9, '2026-01-30', 95, 35, 45, 'Vata', NULL);
 
 -- --------------------------------------------------------
 
@@ -464,12 +479,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `phone`, `email`, `password_hash`, `is_verified`, `reset_otp`, `reset_otp_expires`, `created_at`, `api_token`, `reset_token`, `checkin_streak`, `last_checkin_date`) VALUES
-(9, 'eswar', NULL, 'saimanieswardutta8@gmail.com', '$2y$10$CcXMZsQIjeZvS6D5R.9Y2.kqKweAfEJxGoNLAeTdSQjEWgs7UfBpq', 0, '162406', '2026-01-02 17:15:34', '2026-01-02 16:05:34', NULL, NULL, 0, NULL),
 (11, 'eswar', NULL, 'rohithnaidu269@gmail.com', '$2y$10$2yhphrylkR/qsG45bEVlQuJBsdy1YJdUYymqynm7vVyucSDknaLwe', 0, '293863', '2026-01-02 17:17:48', '2026-01-02 16:07:49', NULL, NULL, 0, NULL),
 (12, 'gwyw', NULL, 'eswar@gmail.com', '$2y$10$t8jq2tLfcRYNvSXpvawuNuWzHOz/IPy1DXLWNFRu14zqtDRfAiudi', 0, '602368', '2026-01-02 17:32:35', '2026-01-02 16:22:35', NULL, NULL, 0, NULL),
 (13, 'eswar', NULL, 'esw1ar@gmail.com', '$2y$10$yGA2akdSYLPhjFRbGAw6/.KAQp.ScONoNzaF5xZiCL/7FjTlrVoVK', 0, '906493', '2026-01-02 17:36:40', '2026-01-02 16:26:40', NULL, NULL, 0, NULL),
 (14, 'sai manieswar', NULL, 'duttasaimanieswar@gmail.com', '$2y$10$YwGJGe6hRHjssZ2jRTMThuDWR4aV4RbwkWcKPYr098.eYIf9bAHTu', 0, NULL, NULL, '2026-01-02 16:47:58', NULL, NULL, 0, NULL),
-(15, 'Sai', NULL, 'e02697113@gmail.com', '$2y$10$5VQ60L9iTHZpwBro5uSFU.b7DJCqsdEvNlzz3JlcRIkrv72SSlDFi', 1, NULL, NULL, '2026-01-03 01:47:55', '0fb354ebf7c692ec4fe566c946190b9d2e11ec35ec63cbd7d4e7755ae2854319', NULL, 19, '2026-01-21'),
+(15, 'Sai', NULL, 'e02697113@gmail.com', '$2y$10$5VQ60L9iTHZpwBro5uSFU.b7DJCqsdEvNlzz3JlcRIkrv72SSlDFi', 1, NULL, NULL, '2026-01-03 01:47:55', 'e24d0f57a90f2bd1d9f11bb19ce9dfc6f949665b5ad5e7abd1a7cb2e7e4a621a', NULL, 2, '2026-01-30'),
 (16, 'Gnaneswar', NULL, 'v.gnaneswarreddy18@gmail.com', '$2y$10$F2UYOczl0klFD8dsW/a1Fe65OlfEN/kF587Fgdcm4SCmOGNevNo2K', 1, NULL, NULL, '2026-01-04 03:46:54', 'a8ab90a816fb9962599266b1671019e672a6dbb96bd6bd50517d5aa7681db5ff', NULL, 0, NULL),
 (17, 'siva', NULL, 'ysivaprasad0273@gmail.com', '$2y$10$SZy2SJ2Kr8mEq8Fe2Ck7iOkZTh5/rKfKh/7SKpdRJpSYbdcvvr7B.', 1, NULL, NULL, '2026-01-04 04:36:52', '190f952d742c890d5c4b51b550c8b43557e0107196fd752c6a5a3d320c82fc01', NULL, 4, '2026-01-06'),
 (20, 'malli kharjuna', NULL, 'chevvumallikarjuna11@gmail.com', '$2y$10$zwoa1ktXrF36gh741.Hh4eNOvh0p5M/HE36hBHvjBKeRVWO1i3wSK', 1, NULL, NULL, '2026-01-04 14:14:49', '13934f5cf47c51a7e040961421dc6a26645fe711e1f4bbec4634b38f14982ec5', NULL, 0, NULL),
@@ -568,19 +582,19 @@ ALTER TABLE `user_profiles`
 -- AUTO_INCREMENT for table `body_balance_scores`
 --
 ALTER TABLE `body_balance_scores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
 
 --
 -- AUTO_INCREMENT for table `daily_checkins`
 --
 ALTER TABLE `daily_checkins`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=156;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=166;
 
 --
 -- AUTO_INCREMENT for table `dosha_scores`
 --
 ALTER TABLE `dosha_scores`
-  MODIFY `score_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `score_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
 
 --
 -- AUTO_INCREMENT for table `herbs`

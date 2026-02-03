@@ -1,25 +1,250 @@
----- Checkin at 2026-01-21 06:37:03 ----
+---- Checkin at 2026-01-22 14:55:18 ----
+Input: Array
+(
+    [appetite] => Strong
+    [body_dryness] => 1
+    [body_heat] => 0
+    [body_heaviness] => 1
+    [cold_body] => 0
+    [digestion] => Heavy
+    [elimination] => Regular
+    [evening_energy] => High
+    [hydration_level] => 5
+    [mood] => Irritable
+    [morning_energy] => Normal
+    [physical_activity] => Light
+    [sleep_hours] => 7
+    [sleep_quality] => Poor
+    [spicy_craving] => 0
+    [stress_level] => Low
+    [sweet_craving] => 0
+    [user_id] => 15
+)
+
+Saved Score: 43
+Calculated: V=55 P=45 K=70 Imbalance=170 Score=43.333333333333
+---- Checkin at 2026-01-24 17:56:00 ----
 Input: Array
 (
     [appetite] => Strong
     [body_dryness] => 0
     [body_heat] => 0
     [body_heaviness] => 0
-    [cold_body] => 0
-    [digestion] => Heavy
-    [elimination] => Regular
-    [evening_energy] => Normal
-    [hydration_level] => 5
-    [mood] => Calm
-    [morning_energy] => High
-    [physical_activity] => Light
+    [cold_body] => 1
+    [digestion] => Bloated
+    [elimination] => Heavy
+    [evening_energy] => High
+    [hydration_level] => 8
+    [mood] => Irritable
+    [morning_energy] => Low
+    [physical_activity] => Moderate
     [sleep_hours] => 7
-    [sleep_quality] => Good
+    [sleep_quality] => Poor
     [spicy_craving] => 1
     [stress_level] => Medium
     [sweet_craving] => 0
     [user_id] => 15
 )
 
-Saved Score: 60
-Calculated: V=0 P=70 K=50 Imbalance=120 Score=60
+Saved Score: 36
+Calculated: V=65 P=75 K=50 Imbalance=190 Score=36.666666666667
+---- Checkin at 2026-01-29 10:41:02 ----
+Input: Array
+(
+    [appetite] => Strong
+    [body_dryness] => 0
+    [body_heat] => 0
+    [body_heaviness] => 1
+    [cold_body] => 0
+    [digestion] => Normal
+    [elimination] => Regular
+    [evening_energy] => High
+    [hydration_level] => 5
+    [mood] => Calm
+    [morning_energy] => Normal
+    [physical_activity] => Light
+    [sleep_hours] => 7
+    [sleep_quality] => Moderate
+    [spicy_craving] => 0
+    [stress_level] => Low
+    [sweet_craving] => 1
+    [user_id] => 15
+)
+
+Saved Score: 61
+Calculated: V=15 P=35 K=65 Imbalance=115 Score=61.666666666667
+---- Checkin at 2026-01-29 11:03:17 ----
+Input: Array
+(
+    [appetite] => Strong
+    [body_dryness] => 0
+    [body_heat] => 0
+    [body_heaviness] => 1
+    [cold_body] => 0
+    [digestion] => Heavy
+    [elimination] => Regular
+    [evening_energy] => High
+    [hydration_level] => 5
+    [mood] => Calm
+    [morning_energy] => Normal
+    [physical_activity] => Light
+    [sleep_hours] => 7
+    [sleep_quality] => Good
+    [spicy_craving] => 0
+    [stress_level] => Medium
+    [sweet_craving] => 1
+    [user_id] => 15
+)
+
+Saved Score: 53
+Calculated: V=15 P=40 K=85 Imbalance=140 Score=53.333333333333
+---- Checkin at 2026-01-30 12:46:41 ----
+Input: Array
+(
+    [appetite] => Strong
+    [body_dryness] => 1
+    [body_heat] => 0
+    [body_heaviness] => 1
+    [cold_body] => 0
+    [digestion] => Heavy
+    [elimination] => Regular
+    [evening_energy] => Low
+    [hydration_level] => 6
+    [mood] => Low
+    [morning_energy] => Normal
+    [physical_activity] => Moderate
+    [sleep_hours] => 6
+    [sleep_quality] => Good
+    [spicy_craving] => 0
+    [stress_level] => High
+    [sweet_craving] => 0
+    [user_id] => 15
+)
+
+Saved Score: 48
+Calculated: V=40 P=25 K=90 Imbalance=155 Score=48.333333333333
+---- Checkin at 2026-01-30 12:50:23 ----
+Input: Array
+(
+    [appetite] => Strong
+    [body_dryness] => 1
+    [body_heat] => 0
+    [body_heaviness] => 1
+    [cold_body] => 0
+    [digestion] => Heavy
+    [elimination] => Regular
+    [evening_energy] => High
+    [hydration_level] => 6
+    [mood] => Calm
+    [morning_energy] => Low
+    [physical_activity] => Moderate
+    [sleep_hours] => 7
+    [sleep_quality] => Poor
+    [spicy_craving] => 0
+    [stress_level] => Medium
+    [sweet_craving] => 0
+    [user_id] => 9
+)
+
+Saved Score: 46
+Calculated: V=55 P=40 K=65 Imbalance=160 Score=46.666666666667
+---- Checkin at 2026-01-30 12:52:10 ----
+Input: Array
+(
+    [appetite] => Strong
+    [body_dryness] => 1
+    [body_heat] => 0
+    [body_heaviness] => 1
+    [cold_body] => 0
+    [digestion] => Bloated
+    [elimination] => Regular
+    [evening_energy] => High
+    [hydration_level] => 7
+    [mood] => Anxious
+    [morning_energy] => Low
+    [physical_activity] => Moderate
+    [sleep_hours] => 7
+    [sleep_quality] => Moderate
+    [spicy_craving] => 0
+    [stress_level] => High
+    [sweet_craving] => 0
+    [user_id] => 9
+)
+
+Saved Score: 41
+Calculated: V=95 P=35 K=45 Imbalance=175 Score=41.666666666667
+---- Checkin at 2026-01-30 12:59:12 ----
+Input: Array
+(
+    [appetite] => Strong
+    [body_dryness] => 0
+    [body_heat] => 0
+    [body_heaviness] => 1
+    [cold_body] => 0
+    [digestion] => Heavy
+    [elimination] => Regular
+    [evening_energy] => Normal
+    [hydration_level] => 7
+    [mood] => Calm
+    [morning_energy] => Low
+    [physical_activity] => Light
+    [sleep_hours] => 7
+    [sleep_quality] => Poor
+    [spicy_craving] => 0
+    [stress_level] => High
+    [sweet_craving] => 1
+    [user_id] => 15
+)
+
+Saved Score: 48
+Calculated: V=40 P=25 K=90 Imbalance=155 Score=48.333333333333
+---- Checkin at 2026-01-30 13:03:36 ----
+Input: Array
+(
+    [appetite] => Strong
+    [body_dryness] => 0
+    [body_heat] => 0
+    [body_heaviness] => 1
+    [cold_body] => 0
+    [digestion] => Bloated
+    [elimination] => Loose
+    [evening_energy] => Low
+    [hydration_level] => 6
+    [mood] => Anxious
+    [morning_energy] => Normal
+    [physical_activity] => Light
+    [sleep_hours] => 6
+    [sleep_quality] => Good
+    [spicy_craving] => 0
+    [stress_level] => High
+    [sweet_craving] => 1
+    [user_id] => 15
+)
+
+Saved Score: 41
+Calculated: V=60 P=40 K=75 Imbalance=175 Score=41.666666666667
+---- Checkin at 2026-01-30 13:09:25 ----
+Input: Array
+(
+    [appetite] => Strong
+    [body_dryness] => 0
+    [body_heat] => 0
+    [body_heaviness] => 1
+    [cold_body] => 0
+    [digestion] => Bloated
+    [elimination] => Loose
+    [evening_energy] => Normal
+    [hydration_level] => 5
+    [mood] => Irritable
+    [morning_energy] => Low
+    [physical_activity] => Light
+    [sleep_hours] => 7
+    [sleep_quality] => Moderate
+    [spicy_craving] => 0
+    [stress_level] => High
+    [sweet_craving] => 1
+    [user_id] => 15
+)
+
+Saved Score: 40
+Calculated: V=40 P=70 K=70 Imbalance=180 Score=40
